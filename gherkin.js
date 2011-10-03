@@ -1,7 +1,3 @@
-/*
-Language: Gherkin
-*/
-
 hljs.LANGUAGES.gherkin = function() {
   return {
     defaultMode: {
@@ -9,6 +5,11 @@ hljs.LANGUAGES.gherkin = function() {
         {
           className: 'keyword',
           begin: '^\\s*(Feature|Scenario|Scenario Outline|Examples|Given |When |Then |And |But )',
+          relevance: 0
+        },
+        {
+          className: 'string',
+          begin: '\\|',
           relevance: 0
         },
         hljs.HASH_COMMENT_MODE,
