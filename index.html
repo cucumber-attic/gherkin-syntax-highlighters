@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Gherkin mode for highlight</title>
+  <link rel="stylesheet" href="highlight/src/styles/idea.css">
+  <script src='highlight/src/highlight.js'></script>
+  <script src='gherkin.js'></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+
+This is just a small example to illustrate how to use Highlight.js with Gherkin.
+
+<pre><code>
+Feature: Hello
+  Scenario: A scenario
+    # A comment
+    @tag @tagz
+    Given I have 4 cukes in my "big" and 'fat' belly:
+      """
+      A doc string
+      """
+</code></pre>
+
+</body>
+
