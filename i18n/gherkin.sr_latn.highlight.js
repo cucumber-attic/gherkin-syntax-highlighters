@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_sr_latn = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Ali\u0020|I\u0020|Onda\u0020|Kad\u0020|Kada\u0020|Zatati\u0020|Zadate\u0020|Zadato\u0020|\\* |Scenariji|Primeri|Koncept|Skica|Struktura\u0020scenarija|Primer|Scenario|Pozadina|Osnova|Kontekst|Osobina|Mogucnost|Mogu\u0107nost|Funkcionalnost)',
+          begin: '^\\s*(Ali |I |Onda |Kad |Kada |Zatati |Zadate |Zadato |\\* |Scenariji|Primeri|Koncept|Skica|Struktura scenarija|Primer|Scenario|Pozadina|Osnova|Kontekst|Osobina|Mogucnost|Mogućnost|Funkcionalnost)',
           relevance: 0
         },
         {

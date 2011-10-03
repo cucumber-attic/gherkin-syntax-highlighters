@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_is = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(En\u0020|Og\u0020|\u00de\u00e1\u0020|\u00deegar\u0020|Ef\u0020|\\* |Atbur\u00f0ar\u00e1sir|D\u00e6mi|L\u00fdsing\u0020D\u00e6ma|L\u00fdsing\u0020Atbur\u00f0ar\u00e1sar|Atbur\u00f0ar\u00e1s|Bakgrunnur|Eiginleiki)',
+          begin: '^\\s*(En |Og |Þá |Þegar |Ef |\\* |Atburðarásir|Dæmi|Lýsing Dæma|Lýsing Atburðarásar|Atburðarás|Bakgrunnur|Eiginleiki)',
           relevance: 0
         },
         {

@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_en_pirate = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Avast!\u0020|Aye\u0020|Let\u0020go\u0020and\u0020haul\u0020|Blimey!\u0020|Gangway!\u0020|\\* |Dead\u0020men\u0020tell\u0020no\u0020tales|Shiver\u0020me\u0020timbers|Heave\u0020to|Yo-ho-ho|Ahoy\u0020matey!)',
+          begin: '^\\s*(Avast! |Aye |Let go and haul |Blimey! |Gangway! |\\* |Dead men tell no tales|Shiver me timbers|Heave to|Yo-ho-ho|Ahoy matey!)',
           relevance: 0
         },
         {

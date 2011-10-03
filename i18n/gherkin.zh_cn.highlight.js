@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_zh_cn = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(\u4f46\u662f|\u800c\u4e14|\u90a3\u4e48|\u5f53|\u5047\u5982|\\* |\u4f8b\u5b50|\u573a\u666f\u5927\u7eb2|\u573a\u666f|\u80cc\u666f|\u529f\u80fd)',
+          begin: '^\\s*(但是|而且|那么|当|假如|\\* |例子|场景大纲|场景|背景|功能)',
           relevance: 0
         },
         {

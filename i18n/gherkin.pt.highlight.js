@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_pt = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Mas\u0020|E\u0020|Entao\u0020|Ent\u00e3o\u0020|Quando\u0020|Dado\u0020|\\* |Exemplos|Esquema\u0020do\u0020Cenario|Esquema\u0020do\u0020Cen\u00e1rio|Cenario|Cen\u00e1rio|Contexto|Funcionalidade)',
+          begin: '^\\s*(Mas |E |Entao |Então |Quando |Dado |\\* |Exemplos|Esquema do Cenario|Esquema do Cenário|Cenario|Cenário|Contexto|Funcionalidade)',
           relevance: 0
         },
         {

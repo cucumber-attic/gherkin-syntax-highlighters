@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_en_tx = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(But\u0020y'all\u0020|And\u0020y'all\u0020|Then\u0020y'all\u0020|When\u0020y'all\u0020|Given\u0020y'all\u0020|\\* |Examples|All\u0020y'all|Scenario|Background|Feature)',
+          begin: '^\\s*(But y'all |And y'all |Then y'all |When y'all |Given y'all |\\* |Examples|All y'all|Scenario|Background|Feature)',
           relevance: 0
         },
         {

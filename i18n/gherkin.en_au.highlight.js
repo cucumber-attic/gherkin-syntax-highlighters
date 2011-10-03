@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_en_au = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Cept\u0020|N\u0020|Ya\u0020gotta\u0020|When\u0020|Ya\u0020know\u0020how\u0020|\\* |Cobber|Blokes|Mate|Background|Crikey)',
+          begin: '^\\s*(Cept |N |Ya gotta |When |Ya know how |\\* |Cobber|Blokes|Mate|Background|Crikey)',
           relevance: 0
         },
         {

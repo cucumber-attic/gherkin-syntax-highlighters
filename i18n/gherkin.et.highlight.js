@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_et = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Kuid\u0020|Ja\u0020|Siis\u0020|Kui\u0020|Eeldades\u0020|\\* |Juhtumid|Raamstsenaarium|Stsenaarium|Taust|Omadus)',
+          begin: '^\\s*(Kuid |Ja |Siis |Kui |Eeldades |\\* |Juhtumid|Raamstsenaarium|Stsenaarium|Taust|Omadus)',
           relevance: 0
         },
         {

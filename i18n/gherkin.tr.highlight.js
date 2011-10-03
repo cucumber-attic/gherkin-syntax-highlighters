@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_tr = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Ama\u0020|Fakat\u0020|Ve\u0020|O\u0020zaman\u0020|E\u011fer\u0020ki\u0020|Diyelim\u0020ki\u0020|\\* |\u00d6rnekler|Senaryo\u0020tasla\u011f\u0131|Senaryo|Ge\u00e7mi\u015f|\u00d6zellik)',
+          begin: '^\\s*(Ama |Fakat |Ve |O zaman |Eğer ki |Diyelim ki |\\* |Örnekler|Senaryo taslağı|Senaryo|Geçmiş|Özellik)',
           relevance: 0
         },
         {

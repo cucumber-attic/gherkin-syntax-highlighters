@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_hr = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Ali\u0020|I\u0020|Onda\u0020|Kad\u0020|Kada\u0020|Zadano\u0020|Zadani\u0020|Zadan\u0020|\\* |Scenariji|Primjeri|Koncept|Skica|Scenarij|Pozadina|Mogucnost|Mogu\u0107nost|Osobina)',
+          begin: '^\\s*(Ali |I |Onda |Kad |Kada |Zadano |Zadani |Zadan |\\* |Scenariji|Primjeri|Koncept|Skica|Scenarij|Pozadina|Mogucnost|Mogućnost|Osobina)',
           relevance: 0
         },
         {

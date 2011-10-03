@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_lt = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Bet\u0020|Ir\u0020|Tada\u0020|Kai\u0020|Duota\u0020|\\* |Variantai|Scenarijai|Pavyzd\u017eiai|Scenarijaus\u0020\u0161ablonas|Scenarijus|Kontekstas|Savyb\u0117)',
+          begin: '^\\s*(Bet |Ir |Tada |Kai |Duota |\\* |Variantai|Scenarijai|Pavyzdžiai|Scenarijaus šablonas|Scenarijus|Kontekstas|Savybė)',
           relevance: 0
         },
         {

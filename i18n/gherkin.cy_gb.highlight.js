@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_cy_gb = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Ond\u0020|A\u0020|Yna\u0020|Pryd\u0020|Anrhegedig\u0020a\u0020|\\* |Enghreifftiau|Scenario\u0020Amlinellol|Scenario|Cefndir|Arwedd)',
+          begin: '^\\s*(Ond |A |Yna |Pryd |Anrhegedig a |\\* |Enghreifftiau|Scenario Amlinellol|Scenario|Cefndir|Arwedd)',
           relevance: 0
         },
         {

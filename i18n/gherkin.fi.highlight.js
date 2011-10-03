@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_fi = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Mutta\u0020|Ja\u0020|Niin\u0020|Kun\u0020|Oletetaan\u0020|\\* |Tapaukset|Tapausaihio|Tapaus|Tausta|Ominaisuus)',
+          begin: '^\\s*(Mutta |Ja |Niin |Kun |Oletetaan |\\* |Tapaukset|Tapausaihio|Tapaus|Tausta|Ominaisuus)',
           relevance: 0
         },
         {

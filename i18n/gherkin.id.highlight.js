@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_id = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Tapi\u0020|Dan\u0020|Maka\u0020|Ketika\u0020|Dengan\u0020|\\* |Contoh|Skenario\u0020konsep|Skenario|Dasar|Fitur)',
+          begin: '^\\s*(Tapi |Dan |Maka |Ketika |Dengan |\\* |Contoh|Skenario konsep|Skenario|Dasar|Fitur)',
           relevance: 0
         },
         {

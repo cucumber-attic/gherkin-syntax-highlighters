@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_en_lol = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(BUT\u0020|AN\u0020|DEN\u0020|WEN\u0020|I\u0020CAN\u0020HAZ\u0020|\\* |EXAMPLZ|MISHUN\u0020SRSLY|MISHUN|B4|OH\u0020HAI)',
+          begin: '^\\s*(BUT |AN |DEN |WEN |I CAN HAZ |\\* |EXAMPLZ|MISHUN SRSLY|MISHUN|B4|OH HAI)',
           relevance: 0
         },
         {

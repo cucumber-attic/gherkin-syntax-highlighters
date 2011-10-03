@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_en = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(But\u0020|And\u0020|Then\u0020|When\u0020|Given\u0020|\\* |Scenarios|Examples|Scenario\u0020Template|Scenario\u0020Outline|Scenario|Background|Feature)',
+          begin: '^\\s*(But |And |Then |When |Given |\\* |Scenarios|Examples|Scenario Template|Scenario Outline|Scenario|Background|Feature)',
           relevance: 0
         },
         {

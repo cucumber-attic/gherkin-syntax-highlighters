@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_ca = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Per\u00f2\u0020|I\u0020|Cal\u0020|Aleshores\u0020|Quan\u0020|Atesa\u0020|At\u00e8s\u0020|Donada\u0020|Donat\u0020|\\* |Exemples|Esquema\u0020de\u0020l'escenari|Escenari|Antecedents|Rerefons|Funcionalitat|Caracter\u00edstica)',
+          begin: '^\\s*(Però |I |Cal |Aleshores |Quan |Atesa |Atès |Donada |Donat |\\* |Exemples|Esquema de l'escenari|Escenari|Antecedents|Rerefons|Funcionalitat|Característica)',
           relevance: 0
         },
         {

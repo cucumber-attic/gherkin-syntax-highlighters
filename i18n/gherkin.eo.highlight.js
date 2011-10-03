@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_eo = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Sed\u0020|Kaj\u0020|Do\u0020|Se\u0020|Donita\u0135o\u0020|\\* |Ekzemploj|Konturo\u0020de\u0020la\u0020scenaro|Scenaro|Fono|Trajto)',
+          begin: '^\\s*(Sed |Kaj |Do |Se |Donitaĵo |\\* |Ekzemploj|Konturo de la scenaro|Scenaro|Fono|Trajto)',
           relevance: 0
         },
         {

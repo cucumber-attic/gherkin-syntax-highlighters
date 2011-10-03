@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_zh_tw = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(\u4f46\u662f|\u4e26\u4e14|\u800c\u4e14|\u90a3\u9ebc|\u7576|\u5047\u8a2d|\\* |\u4f8b\u5b50|\u5287\u672c\u5927\u7db1|\u5834\u666f\u5927\u7db1|\u5287\u672c|\u5834\u666f|\u80cc\u666f|\u529f\u80fd)',
+          begin: '^\\s*(但是|並且|而且|那麼|當|假設|\\* |例子|劇本大綱|場景大綱|劇本|場景|背景|功能)',
           relevance: 0
         },
         {

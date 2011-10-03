@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_sk = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Ale\u0020|A\u0020|Tak\u0020|Ke\u010f\u0020|Pokia\u013e\u0020|\\* |Pr\u00edklady|N\u00e1\u010drt\u0020Scen\u00e1ru|Scen\u00e1r|Pozadie|Po\u017eiadavka)',
+          begin: '^\\s*(Ale |A |Tak |Keď |Pokiaľ |\\* |Príklady|Náčrt Scenáru|Scenár|Pozadie|Požiadavka)',
           relevance: 0
         },
         {

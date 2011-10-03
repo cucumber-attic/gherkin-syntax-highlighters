@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_nl = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Maar\u0020|En\u0020|Dan\u0020|Als\u0020|Stel\u0020|Gegeven\u0020|\\* |Voorbeelden|Abstract\u0020Scenario|Scenario|Achtergrond|Functionaliteit)',
+          begin: '^\\s*(Maar |En |Dan |Als |Stel |Gegeven |\\* |Voorbeelden|Abstract Scenario|Scenario|Achtergrond|Functionaliteit)',
           relevance: 0
         },
         {
