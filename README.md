@@ -19,7 +19,7 @@ Then just put Gherkin source in `<pre><code>` tags:
 
 Get the latest highlight.js code and open the sample file:
 
-    git submodule init
+    git submodule update --init
     open index.html
 
 If you have fixed something, commit it to your fork of the repo and send a pull request.
