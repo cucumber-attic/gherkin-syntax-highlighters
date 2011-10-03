@@ -1,14 +1,15 @@
-This is a Gherkin mode for [Highlight.js](http://softwaremaniacs.org/soft/highlight/en/)
+This is a Gherkin mode for [Highlight.js](http://softwaremaniacs.org/soft/highlight/en/). Usage:
 
-    Feature: Hello
-      Scenario: A scenario
-        # A comment
-        @tag @tagz
-        Given I have 4 cukes in my "big" and 'fat' belly:
-          """
-          A doc string
-          yeah
-          """
+'''html
+<script src="path/to/highlight.js"></script>
+<script src="path/to/gherkin.js"></script>
+'''
 
-<script src="https://raw.github.com/isagalaev/highlight.js/master/src/highlight.js"></script>
-<script src="https://raw.github.com/aslakhellesoy/gherkin-highlight-js/master/gherkin.js"></script>
+# Hacking
+
+Get the latest highlight.js code and open the sample file:
+
+    git submodule init
+    open index.html
+
+If you have fixed something, commit it to your fork of the repo and send a pull request.
