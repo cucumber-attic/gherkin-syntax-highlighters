@@ -2,10 +2,13 @@
 
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Gherkin mode for highlight</title>
   <link rel="stylesheet" href="highlight/src/styles/idea.css">
   <script src='highlight/src/highlight.js'></script>
-  <script src='gherkin.js'></script>
+  <script src='i18n/gherkin.en.highlight.js'></script>
+  <script src='i18n/gherkin.tr.highlight.js'></script>
+  <script src='i18n/gherkin.zh_tw.highlight.js'></script>
   <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
@@ -13,9 +16,9 @@
 
 This is just a small example to illustrate how to use Highlight.js with Gherkin.
 
-<pre><code>
+<pre><code class="gherkin_en">
 Feature: Feature
-  Scenario: A scenario
+  Scenario Outline: A scenario
     # A comment
     @tag @tagz
     Given I have 4 cukes in my "big" and 'Given' Given belly
@@ -25,6 +28,39 @@ Feature: Feature
     And a table:
       | with | some |
       | rows |      |
+</code></pre>
+
+<pre><code class="gherkin_tr">
+# language: tr
+Özellik: Bölme
+  Gülünç hatalardan sakınmak için
+  Bir kasiyer sayıları bölebilmeli
+
+  Senaryo: Doğal sayılar
+    Diyelim ki hesap makinesine 3 girdim
+    Ve hesap makinesine 2 girdim
+    Eğer ki böl tuşuna basarsam
+    O zaman ekrandaki sonuç 1.5 olmalı
+</code></pre>
+
+<pre><code class="gherkin_zh_tw">
+# language: zh-TW
+功能: 加法
+  為了避免愚蠢的錯誤
+  作為一個數學白痴 
+  我希望有人能告訴我兩個數相加的結果
+
+  場景大綱: 將兩個數相加
+    假設我已經在計算機上輸入 <數值_1>
+    而且我已經在計算機上輸入 <數值_2>
+    當我按下 <按鈕>
+    那麼螢幕上應該顯示 <結果>
+
+  例子:
+    | 數值_1 | 數值_2 | 按鈕 | 結果 |
+    | 20     | 30     | add  | 50   |
+    | 2      | 5      | add  | 7    |
+    | 0      | 40     | add  | 40   |
 </code></pre>
 
 </body>
