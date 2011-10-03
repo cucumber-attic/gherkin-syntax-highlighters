@@ -1,9 +1,19 @@
 This is a Gherkin mode for [Highlight.js](http://softwaremaniacs.org/soft/highlight/en/). Usage:
 
-'''html
+```html
+<link href="path/to/style.css" rel="stylesheet">
 <script src="path/to/highlight.js"></script>
 <script src="path/to/gherkin.js"></script>
-'''
+<script>hljs.initHighlightingOnLoad();</script>
+```
+
+Then just put Gherkin source in `<pre><code>` tags:
+
+```html
+<pre><code>Feature: Hello
+  Scenario: World
+</code></pre>
+```
 
 # Hacking
 
