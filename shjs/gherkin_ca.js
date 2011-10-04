@@ -14,7 +14,7 @@ sh_languages['gherkin_ca'] = [
       -1
     ],
     [
-      /\b(?:Però |I |Cal |Aleshores |Quan |Atesa |Atès |Donada |Donat |\* |Exemples|Esquema de l'escenari|Escenari|Antecedents|Rerefons|Funcionalitat|Característica)\b/g,
+      /^(?:[\s]*(?:Però |I |Cal |Aleshores |Quan |Atesa |Atès |Donada |Donat |\* |Exemples|Esquema de lescenariescenari|Escenari|Antecedents|Rerefons|Funcionalitat|Característica))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_ca'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

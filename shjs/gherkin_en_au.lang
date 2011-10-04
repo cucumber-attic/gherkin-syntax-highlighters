@@ -1,0 +1,18 @@
+include "script_comment.lang"
+
+include "number.lang"
+
+keyword = '^([[:space:]]*(?:Cept |N |Ya gotta |When |Ya know how |\* |Cobber|Blokes|Mate|Background|Crikey))'
+
+comment = '^([[:space:]]*\'(?:[^\\\']|\\.)*\'[[:space:]]*|[[:space:]]*\"(?:[^\\\"]|\\.)*\"[[:space:]]*)$'
+
+string delim '([[:space:]]*\'{3})' '(\'{3})' multiline 
+string delim '([[:space:]]*\"{3})' '(\"{3})' multiline 
+
+string delim "\"" "\"" escape "\\" 
+string delim "'" "'"  escape "\\" 
+
+type = '(@[^@\r\n\t ]+)'
+
+symbol = "\|"
+

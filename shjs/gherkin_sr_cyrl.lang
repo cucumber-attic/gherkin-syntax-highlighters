@@ -1,0 +1,18 @@
+include "script_comment.lang"
+
+include "number.lang"
+
+keyword = '^([[:space:]]*(?:Али |И |Онда |Кад |Када |Задати |Задате |Задато |\* |Сценарији|Примери|Концепт|Скица|Структура сценарија|Пример|Сценарио|Позадина|Основа|Контекст|Особина|Могућност|Функционалност))'
+
+comment = '^([[:space:]]*\'(?:[^\\\']|\\.)*\'[[:space:]]*|[[:space:]]*\"(?:[^\\\"]|\\.)*\"[[:space:]]*)$'
+
+string delim '([[:space:]]*\'{3})' '(\'{3})' multiline 
+string delim '([[:space:]]*\"{3})' '(\"{3})' multiline 
+
+string delim "\"" "\"" escape "\\" 
+string delim "'" "'"  escape "\\" 
+
+type = '(@[^@\r\n\t ]+)'
+
+symbol = "\|"
+

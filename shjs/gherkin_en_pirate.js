@@ -14,7 +14,7 @@ sh_languages['gherkin_en_pirate'] = [
       -1
     ],
     [
-      /Avast! |Aye |Let go and haul |Blimey! |Gangway! |\* |Dead men tell no tales|Shiver me timbers|Heave to|Yo-ho-ho|Ahoy matey!/g,
+      /^(?:[\s]*(?:Avast! |Aye |Let go and haul |Blimey! |Gangway! |\* |Dead men tell no tales|Shiver me timbers|Heave to|Yo-ho-ho|Ahoy matey!))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_en_pirate'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

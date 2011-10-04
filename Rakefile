@@ -37,7 +37,11 @@ Gherkin::I18n.all.each do |i18n|
 
   file "shjs/gherkin_#{iso}.lang" => 'shjs/template.erb' do
     template = ERB.new(IO.read('shjs/template.erb'), nil, '-')
-    keywords = Gherkin::I18n::KEYWORD_KEYS.map {|key| i18n.keywords(key)}.flatten.uniq.reverse.join('|')
+    keywords = Gherkin::I18n::KEYWORD_KEYS.map do 
+      |key| i18n.keywords(key)
+    end.flatten.uniq.reverse.map do |kw| 
+      kw == '* ' ? '\\* ' : kw.gsub(/'/, "\\'")
+    end.join('|')
 
     file = File.dirname(__FILE__) + "/shjs/gherkin_#{iso}.lang"
     File.open(file, 'wb') do |io|

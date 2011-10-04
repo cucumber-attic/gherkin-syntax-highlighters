@@ -14,7 +14,7 @@ sh_languages['gherkin_et'] = [
       -1
     ],
     [
-      /\b(?:Kuid |Ja |Siis |Kui |Eeldades |\* |Juhtumid|Raamstsenaarium|Stsenaarium|Taust|Omadus)\b/g,
+      /^(?:[\s]*(?:Kuid |Ja |Siis |Kui |Eeldades |\* |Juhtumid|Raamstsenaarium|Stsenaarium|Taust|Omadus))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_et'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

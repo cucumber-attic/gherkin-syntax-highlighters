@@ -1,0 +1,18 @@
+include "script_comment.lang"
+
+include "number.lang"
+
+keyword = '^([[:space:]]*(?:Аммо |Бирок |Лекин |Ва |Унда |Агар |\* |Мисоллар|Сценарий структураси|Сценарий|Тарих|Функционал))'
+
+comment = '^([[:space:]]*\'(?:[^\\\']|\\.)*\'[[:space:]]*|[[:space:]]*\"(?:[^\\\"]|\\.)*\"[[:space:]]*)$'
+
+string delim '([[:space:]]*\'{3})' '(\'{3})' multiline 
+string delim '([[:space:]]*\"{3})' '(\"{3})' multiline 
+
+string delim "\"" "\"" escape "\\" 
+string delim "'" "'"  escape "\\" 
+
+type = '(@[^@\r\n\t ]+)'
+
+symbol = "\|"
+

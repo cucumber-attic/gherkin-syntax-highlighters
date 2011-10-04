@@ -14,7 +14,7 @@ sh_languages['gherkin_hu'] = [
       -1
     ],
     [
-      /De |És |Akkor |Amikor |Ha |Majd |Adott |Amennyiben |\* |Példák|Forgatókönyv vázlat|Forgatókönyv|Háttér|Jellemző/g,
+      /^(?:[\s]*(?:De |És |Akkor |Amikor |Ha |Majd |Adott |Amennyiben |\* |Példák|Forgatókönyv vázlat|Forgatókönyv|Háttér|Jellemző))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_hu'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

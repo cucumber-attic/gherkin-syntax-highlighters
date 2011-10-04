@@ -1,0 +1,18 @@
+include "script_comment.lang"
+
+include "number.lang"
+
+keyword = '^([[:space:]]*(?:Però |I |Cal |Aleshores |Quan |Atesa |Atès |Donada |Donat |\* |Exemples|Esquema de lescenariescenari|Escenari|Antecedents|Rerefons|Funcionalitat|Característica))'
+
+comment = '^([[:space:]]*\'(?:[^\\\']|\\.)*\'[[:space:]]*|[[:space:]]*\"(?:[^\\\"]|\\.)*\"[[:space:]]*)$'
+
+string delim '([[:space:]]*\'{3})' '(\'{3})' multiline 
+string delim '([[:space:]]*\"{3})' '(\"{3})' multiline 
+
+string delim "\"" "\"" escape "\\" 
+string delim "'" "'"  escape "\\" 
+
+type = '(@[^@\r\n\t ]+)'
+
+symbol = "\|"
+

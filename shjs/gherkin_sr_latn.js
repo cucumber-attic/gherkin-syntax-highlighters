@@ -14,7 +14,7 @@ sh_languages['gherkin_sr_latn'] = [
       -1
     ],
     [
-      /\b(?:Ali |I |Onda |Kad |Kada |Zatati |Zadate |Zadato |\* |Scenariji|Primeri|Koncept|Skica|Struktura scenarija|Primer|Scenario|Pozadina|Osnova|Kontekst|Osobina|Mogucnost|Mogućnost|Funkcionalnost)\b/g,
+      /^(?:[\s]*(?:Ali |I |Onda |Kad |Kada |Zatati |Zadate |Zadato |\* |Scenariji|Primeri|Koncept|Skica|Struktura scenarija|Primer|Scenario|Pozadina|Osnova|Kontekst|Osobina|Mogucnost|Mogućnost|Funkcionalnost))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_sr_latn'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

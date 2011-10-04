@@ -14,7 +14,7 @@ sh_languages['gherkin_fi'] = [
       -1
     ],
     [
-      /\b(?:Mutta |Ja |Niin |Kun |Oletetaan |\* |Tapaukset|Tapausaihio|Tapaus|Tausta|Ominaisuus)\b/g,
+      /^(?:[\s]*(?:Mutta |Ja |Niin |Kun |Oletetaan |\* |Tapaukset|Tapausaihio|Tapaus|Tausta|Ominaisuus))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_fi'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

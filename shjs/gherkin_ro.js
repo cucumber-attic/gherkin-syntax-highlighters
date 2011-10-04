@@ -14,7 +14,7 @@ sh_languages['gherkin_ro'] = [
       -1
     ],
     [
-      /\b(?:Dar |Şi |Și |Si |Atunci |Când |Cand |Daţi fiind |Dați fiind |Dati fiind |Dat fiind |Date fiind |\* |Exemple|Structură scenariu|Structura scenariu|Scenariu|Context|Funcţionalitate|Funcționalitate|Functionalitate)\b/g,
+      /^(?:[\s]*(?:Dar |Şi |Și |Si |Atunci |Când |Cand |Daţi fiind |Dați fiind |Dati fiind |Dat fiind |Date fiind |\* |Exemple|Structură scenariu|Structura scenariu|Scenariu|Context|Funcţionalitate|Funcționalitate|Functionalitate))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_ro'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

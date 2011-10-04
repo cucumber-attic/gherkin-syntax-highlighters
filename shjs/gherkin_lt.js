@@ -14,7 +14,7 @@ sh_languages['gherkin_lt'] = [
       -1
     ],
     [
-      /Bet |Ir |Tada |Kai |Duota |\* |Variantai|Scenarijai|Pavyzdžiai|Scenarijaus šablonas|Scenarijus|Kontekstas|Savybė/g,
+      /^(?:[\s]*(?:Bet |Ir |Tada |Kai |Duota |\* |Variantai|Scenarijai|Pavyzdžiai|Scenarijaus šablonas|Scenarijus|Kontekstas|Savybė))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_lt'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

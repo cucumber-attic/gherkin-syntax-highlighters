@@ -14,7 +14,7 @@ sh_languages['gherkin_en_au'] = [
       -1
     ],
     [
-      /\b(?:Cept |N |Ya gotta |When |Ya know how |\* |Cobber|Blokes|Mate|Background|Crikey)\b/g,
+      /^(?:[\s]*(?:Cept |N |Ya gotta |When |Ya know how |\* |Cobber|Blokes|Mate|Background|Crikey))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_en_au'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

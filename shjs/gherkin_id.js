@@ -14,7 +14,7 @@ sh_languages['gherkin_id'] = [
       -1
     ],
     [
-      /\b(?:Tapi |Dan |Maka |Ketika |Dengan |\* |Contoh|Skenario konsep|Skenario|Dasar|Fitur)\b/g,
+      /^(?:[\s]*(?:Tapi |Dan |Maka |Ketika |Dengan |\* |Contoh|Skenario konsep|Skenario|Dasar|Fitur))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_id'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

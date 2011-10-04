@@ -14,7 +14,7 @@ sh_languages['gherkin_lv'] = [
       -1
     ],
     [
-      /\b(?:Bet |Un |Tad |Ja |Kad |\* |Paraugs|Piemēri|Scenārijs pēc parauga|Scenārijs|Situācija|Konteksts|Fīča|Funkcionalitāte)\b/g,
+      /^(?:[\s]*(?:Bet |Un |Tad |Ja |Kad |\* |Paraugs|Piemēri|Scenārijs pēc parauga|Scenārijs|Situācija|Konteksts|Fīča|Funkcionalitāte))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_lv'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

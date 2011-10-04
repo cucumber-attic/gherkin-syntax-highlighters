@@ -14,7 +14,7 @@ sh_languages['gherkin_vi'] = [
       -1
     ],
     [
-      /\b(?:Nhưng |Và |Thì |Khi |Cho |Biết |\* |Dữ liệu|Khung kịch bản|Khung tình huống|Kịch bản|Tình huống|Bối cảnh|Tính năng)\b/g,
+      /^(?:[\s]*(?:Nhưng |Và |Thì |Khi |Cho |Biết |\* |Dữ liệu|Khung kịch bản|Khung tình huống|Kịch bản|Tình huống|Bối cảnh|Tính năng))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_vi'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

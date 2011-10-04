@@ -14,7 +14,7 @@ sh_languages['gherkin_eo'] = [
       -1
     ],
     [
-      /\b(?:Sed |Kaj |Do |Se |Donitaĵo |\* |Ekzemploj|Konturo de la scenaro|Scenaro|Fono|Trajto)\b/g,
+      /^(?:[\s]*(?:Sed |Kaj |Do |Se |Donitaĵo |\* |Ekzemploj|Konturo de la scenaro|Scenaro|Fono|Trajto))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_eo'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

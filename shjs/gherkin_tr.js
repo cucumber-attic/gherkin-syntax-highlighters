@@ -14,7 +14,7 @@ sh_languages['gherkin_tr'] = [
       -1
     ],
     [
-      /\b(?:Ama |Fakat |Ve |O zaman |Eğer ki |Diyelim ki |\* |Örnekler|Senaryo taslağı|Senaryo|Geçmiş|Özellik)\b/g,
+      /^(?:[\s]*(?:Ama |Fakat |Ve |O zaman |Eğer ki |Diyelim ki |\* |Örnekler|Senaryo taslağı|Senaryo|Geçmiş|Özellik))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_tr'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

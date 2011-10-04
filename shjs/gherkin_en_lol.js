@@ -14,7 +14,7 @@ sh_languages['gherkin_en_lol'] = [
       -1
     ],
     [
-      /\b(?:BUT |AN |DEN |WEN |I CAN HAZ |\* |EXAMPLZ|MISHUN SRSLY|MISHUN|B4|OH HAI)\b/g,
+      /^(?:[\s]*(?:BUT |AN |DEN |WEN |I CAN HAZ |\* |EXAMPLZ|MISHUN SRSLY|MISHUN|B4|OH HAI))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_en_lol'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

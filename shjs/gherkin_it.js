@@ -14,7 +14,7 @@ sh_languages['gherkin_it'] = [
       -1
     ],
     [
-      /Ma |E |Allora |Quando |Dato |\* |Esempi|Schema dello scenario|Scenario|Contesto|Funzionalità/g,
+      /^(?:[\s]*(?:Ma |E |Allora |Quando |Dato |\* |Esempi|Schema dello scenario|Scenario|Contesto|Funzionalità))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_it'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

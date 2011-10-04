@@ -14,7 +14,7 @@ sh_languages['gherkin_en_tx'] = [
       -1
     ],
     [
-      /\b(?:But y'all |And y'all |Then y'all |When y'all |Given y'all |\* |Examples|All y'all|Scenario|Background|Feature)\b/g,
+      /^(?:[\s]*(?:But yall all |And yall all |Then yall all |When yall all |Given yall all |\* |Examples|All yallall|Scenario|Background|Feature))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_en_tx'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

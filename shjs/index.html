@@ -4,10 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>Gherkin mode for highlight</title>
-  <link rel="stylesheet" href="shjs-0.6-src/sh_style.css">
+  <link rel="stylesheet" href="sh_solarized-dark.css">
   <script src='shjs-0.6-src/sh_main.js'></script>
   <script src='shjs-0.6-src/lang/sh_ruby.js'></script>
   <script src='gherkin_en.js'></script>
+  <script src='gherkin_tr.js'></script>
+  <script src='gherkin_zh_tw.js'></script>
+  <style>
+  pre.sh_sourceCode {
+    font-weight: bold;
+    font-style: bold;
+  }
+  </style>
 </head>
 
 <body onload="sh_highlightDocument();">
@@ -21,6 +29,7 @@ end
 
 Then /^I should see "(.*)"$/ do |text|
   a = "hellooo"
+  @jalla = "hellooo"
   if page.respond_to? :should
     page.should have_content(text)
   else
@@ -35,16 +44,18 @@ Feature: Feature
   Scenario Outline: A scenario
     # A comment
     @tag @tagz
+    #@what
+    @legal.tag
     Given I have 4 cukes in my "big" and 'Given' Given belly
       """
       A doc string with Given
       """
-    And a table:
+    * * a table:
       | with | some |
       | rows |      |
 </pre>
 
-<pre><code class="gherkin_tr">
+<pre class="sh_gherkin_tr">
 # language: tr
 Özellik: Bölme
   Gülünç hatalardan sakınmak için
@@ -55,9 +66,9 @@ Feature: Feature
     Ve hesap makinesine 2 girdim
     Eğer ki böl tuşuna basarsam
     O zaman ekrandaki sonuç 1.5 olmalı
-</code></pre>
+</pre>
 
-<pre><code class="gherkin_zh_tw">
+<pre class="sh_gherkin_zh_tw">
 # language: zh-TW
 功能: 加法
   為了避免愚蠢的錯誤
@@ -75,7 +86,7 @@ Feature: Feature
     | 20     | 30     | add  | 50   |
     | 2      | 5      | add  | 7    |
     | 0      | 40     | add  | 40   |
-</code></pre>
+</pre>
 
 </body>
 

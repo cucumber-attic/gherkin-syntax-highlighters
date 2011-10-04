@@ -14,7 +14,7 @@ sh_languages['gherkin_en_scouse'] = [
       -1
     ],
     [
-      /\b(?:Buh |An |Den youse gotta |Dun |Youse know like when |Wun |Youse know when youse got |Givun |\* |Examples|Wharrimean is|The thing of it is|Dis is what went down|Feature)\b/g,
+      /^(?:[\s]*(?:Buh |An |Den youse gotta |Dun |Youse know like when |Wun |Youse know when youse got |Givun |\* |Examples|Wharrimean is|The thing of it is|Dis is what went down|Feature))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_en_scouse'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

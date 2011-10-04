@@ -2,7 +2,7 @@ include "script_comment.lang"
 
 include "number.lang"
 
-keyword = "<%= keywords %>"
+keyword = '^([[:space:]]*(?:<%= keywords %>))'
 
 comment = '^([[:space:]]*\'(?:[^\\\']|\\.)*\'[[:space:]]*|[[:space:]]*\"(?:[^\\\"]|\\.)*\"[[:space:]]*)$'
 
@@ -12,6 +12,7 @@ string delim '([[:space:]]*\"{3})' '(\"{3})' multiline
 string delim "\"" "\"" escape "\\" 
 string delim "'" "'"  escape "\\" 
 
-include "symbols.lang"
-symbol = "{|}"
+type = '(@[^@\r\n\t ]+)'
+
+symbol = "\|"
 

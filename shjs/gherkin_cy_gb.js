@@ -14,7 +14,7 @@ sh_languages['gherkin_cy_gb'] = [
       -1
     ],
     [
-      /\b(?:Ond |A |Yna |Pryd |Anrhegedig a |\* |Enghreifftiau|Scenario Amlinellol|Scenario|Cefndir|Arwedd)\b/g,
+      /^(?:[\s]*(?:Ond |A |Yna |Pryd |Anrhegedig a |\* |Enghreifftiau|Scenario Amlinellol|Scenario|Cefndir|Arwedd))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_cy_gb'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]

@@ -14,7 +14,7 @@ sh_languages['gherkin_is'] = [
       -1
     ],
     [
-      /\b(?:En |Og |Þá |Þegar |Ef |\* |Atburðarásir|Dæmi|Lýsing Dæma|Lýsing Atburðarásar|Atburðarás|Bakgrunnur|Eiginleiki)\b/g,
+      /^(?:[\s]*(?:En |Og |Þá |Þegar |Ef |\* |Atburðarásir|Dæmi|Lýsing Dæma|Lýsing Atburðarásar|Atburðarás|Bakgrunnur|Eiginleiki))/g,
       'sh_keyword',
       -1
     ],
@@ -44,7 +44,12 @@ sh_languages['gherkin_is'] = [
       5
     ],
     [
-      /~|!|%|\^|\*|\(|\)|-|\+|=|\[|\]|\\|:|;|,|\.|\/|\?|&|<|>|\||\{|\}/g,
+      /(?:@[^@\r\n\t ]+)/g,
+      'sh_type',
+      -1
+    ],
+    [
+      /\|/g,
       'sh_symbol',
       -1
     ]
