@@ -1,52 +1,28 @@
-Gherkin syntax highlighting for several highlighting engines.
+I18n Gherkin syntax highlighting for several highlighting engines:
 
-## [Highlight.js](http://softwaremaniacs.org/soft/highlight/en/)
+* [Source Highlight](http://www.gnu.org/s/src-highlite/source-highlight.html)
+* [SHJS](http://shjs.sourceforge.net/)
+* [Highlight.js](http://softwaremaniacs.org/soft/highlight/en/)
+* [Pygments](http://pygments.org/) - (See [issue 4](https://github.com/cucumber/gherkin-syntax-highlighters/issues/4))
 
-Usage:
-
-```html
-<link href="path/to/style.css" rel="stylesheet">
-<script src="path/to/highlight.js"></script>
-<script src="path/to/gherkin.en.highlight.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-```
-
-Then just put Gherkin source in `<pre><code>` tags:
-
-```html
-<pre><code>Feature: Hello
-  Scenario: World
-</code></pre>
-```
-
-See index.html for an i18n example.
-
+See `index.html` in each subdirectory for sample usage.
 
 ## Hacking
 
-All dirs have an index.html
-
-### Highlight.js
-
-Get the latest highlight.js code and install gherkin so you can generate the highlighters:
+First, install dependencies:
 
     git submodule update --init
     gem install gherkin
 
-Generate the i18n highlighters:
+Each syntax highlighter has a template named `template.erb` that you can edit. You can then regenerate a highlighter with e.g.
+
+    rake rake highlight.js/gherkin_en.js
+
+To regenerate all of the highlighters, run:
 
     rake
 
-Eyeball the highlighted Gherkin:
-
-    open examples/highlight.js.html
+The `shjs` modes don't have a `template.erb` as they are generated from the `src-highlight` modes.
 
 If you have fixed something, commit it to your fork of the repo and send a pull request.
-
-### SHJS
-
-SHJS is based on [GNU Source Highlight](http://www.gnu.org/software/src-highlite).
-
-    sudo apt-get install source-highlight
-    brew install source-highlight
 
