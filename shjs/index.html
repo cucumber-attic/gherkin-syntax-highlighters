@@ -4,19 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>Gherkin mode for highlight</title>
-  <link rel="stylesheet" href="highlight/src/styles/idea.css">
-  <script src='highlight/src/highlight.js'></script>
+  <link rel="stylesheet" href="shjs-0.6-src/sh_style.css">
+  <script src='shjs-0.6-src/sh_main.js'></script>
+  <script src='shjs-0.6-src/lang/sh_ruby.js'></script>
   <script src='gherkin_en.js'></script>
-  <script src='gherkin_tr.js'></script>
-  <script src='gherkin_zh_tw.js'></script>
-  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
-<body>
+<body onload="sh_highlightDocument();">
 
 This is just a small example to illustrate how to use Highlight.js with Gherkin.
 
-<pre><code class="gherkin_en">
+<pre class="sh_ruby">
+When /^I press "(.*)"$/ do |button|
+  click_button(button)
+end
+
+Then /^I should see "(.*)"$/ do |text|
+  a = "hellooo"
+  if page.respond_to? :should
+    page.should have_content(text)
+  else
+    assert page.has_content?(text)
+  end
+end
+</pre>
+
+
+<pre class="sh_gherkin_en">
 Feature: Feature
   Scenario Outline: A scenario
     # A comment
@@ -28,7 +42,7 @@ Feature: Feature
     And a table:
       | with | some |
       | rows |      |
-</code></pre>
+</pre>
 
 <pre><code class="gherkin_tr">
 # language: tr

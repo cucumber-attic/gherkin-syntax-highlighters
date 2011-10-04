@@ -21,7 +21,12 @@ Then just put Gherkin source in `<pre><code>` tags:
 
 See index.html for an i18n example.
 
+
 ## Hacking
+
+All dirs have an index.html
+
+### Highlight.js
 
 Get the latest highlight.js code and install gherkin so you can generate the highlighters:
 
@@ -37,3 +42,11 @@ Eyeball the highlighted Gherkin:
     open examples/highlight.js.html
 
 If you have fixed something, commit it to your fork of the repo and send a pull request.
+
+### SHJS
+
+SHJS is based on [GNU Source Highlight](http://www.gnu.org/software/src-highlite).
+
+    sudo apt-get install source-highlight
+    brew install source-highlight
+
