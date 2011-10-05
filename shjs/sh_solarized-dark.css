@@ -20,7 +20,7 @@ pre.sh_sourceCode .sh_string {
 pre.sh_sourceCode .sh_symbol {
     /*color: #93a1a1;*/
     /*color: #2aa198;*/
-    color: #6c71c4;
+    /*color: #6c71c4;*/
 }
 
 pre.sh_sourceCode .sh_regexp {
