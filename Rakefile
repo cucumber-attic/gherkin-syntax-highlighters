@@ -30,7 +30,7 @@ Gherkin::I18n.all.each do |i18n|
   file "shjs/gherkin_#{iso}.js" => ['shjs/shjs-0.6-src/sh2js.pl', "src-highlite/gherkin_#{iso}.lang"] do
     Dir.chdir('shjs/shjs-0.6-src') do
       begin
-        sh "perl sh2js.pl ../../src-highlite/gherkin_#{iso}.lang > ../gherkin_#{iso}.js"
+        sh "perl sh2js.pl ../../src-highlite/gherkin_#{iso}.lang > ../sh_gherkin_#{iso}.js"
       rescue => e
         e.message << "\n\n    You may have to run `[sudo] cpan Parse::RecDescent`\n\n"
         raise e
