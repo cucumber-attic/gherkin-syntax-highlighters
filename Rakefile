@@ -25,9 +25,9 @@ Gherkin::I18n.all.each do |i18n|
 
   # SHJS
 
-  task :shjs => "shjs/gherkin_#{iso}.js"
+  task :shjs => "shjs/sh_gherkin_#{iso}.js"
 
-  file "shjs/gherkin_#{iso}.js" => ['shjs/shjs-0.6-src/sh2js.pl', "src-highlite/gherkin_#{iso}.lang"] do
+  file "shjs/sh_gherkin_#{iso}.js" => ['shjs/shjs-0.6-src/sh2js.pl', "src-highlite/gherkin_#{iso}.lang"] do
     Dir.chdir('shjs/shjs-0.6-src') do
       begin
         sh "perl sh2js.pl ../../src-highlite/gherkin_#{iso}.lang > ../sh_gherkin_#{iso}.js"
@@ -52,8 +52,8 @@ Gherkin::I18n.all.each do |i18n|
 
   file "src-highlite/gherkin_#{iso}.lang" => 'src-highlite/template.erb' do
     template = ERB.new(IO.read('src-highlite/template.erb'), nil, '-')
-    keywords = Gherkin::I18n::KEYWORD_KEYS.map do 
-      |key| i18n.keywords(key)
+    keywords = Gherkin::I18n::KEYWORD_KEYS.map do |key| 
+      i18n.keywords(key)
     end.flatten.uniq.reverse.map do |kw| 
       kw == '* ' ? '\\* ' : kw.gsub(/'/, "\\'")
     end.join('|')

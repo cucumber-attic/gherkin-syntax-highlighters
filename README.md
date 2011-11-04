@@ -16,7 +16,7 @@ First, install dependencies:
 
 Each syntax highlighter has a template named `template.erb` that you can edit. You can then regenerate a highlighter with e.g.
 
-    rake rake highlight.js/gherkin_en.js
+    rake highlight.js/gherkin_en.js
 
 To regenerate all of the highlighters, run:
 

@@ -2,7 +2,7 @@ include "script_comment.lang"
 
 include "number.lang"
 
-keyword = '^([[:space:]]*(?:Ma |E |Allora |Quando |Dato |\* |Esempi|Schema dello scenario|Scenario|Contesto|Funzionalità))'
+keyword = '^([[:space:]]*(?:Ma |E |Allora |Quando |Date |Dati |Data |Dato |\* |Esempi|Schema dello scenario|Scenario|Contesto|Funzionalità))'
 
 comment = '^([[:space:]]*\'(?:[^\\\']|\\.)*\'[[:space:]]*|[[:space:]]*\"(?:[^\\\"]|\\.)*\"[[:space:]]*)$'
 

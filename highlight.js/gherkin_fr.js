@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_fr = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Mais |Et |Alors |Lorsqu'|Lorsque |Quand |Etant donné |Soit |\\* |Exemples|Plan du Scénario|Plan du scénario|Scénario|Contexte|Fonctionnalité)',
+          begin: '^\\s*(Mais |Et |Alors |Lorsqu'|Lorsque |Quand |Étant données |Étant donnés |Étant donnée |Étant donné |Etant données |Etant donnés |Etant donnée |Etant donné |Soit |\\* |Exemples|Plan du Scénario|Plan du scénario|Scénario|Contexte|Fonctionnalité)',
           relevance: 0
         },
         {
