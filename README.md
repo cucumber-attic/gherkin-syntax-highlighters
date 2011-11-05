@@ -25,22 +25,6 @@ To regenerate all of the highlighters, run:
 
 The `shjs` modes don't have a `template.erb` as they are generated from the `src-highlight` modes.
 
-## Github editor
-
-Start a server to serve assets (userscript and gherkin mode):
-
-    npm link
-    node serve.js
-
-Now, install the user script by going to http://localhost:3001/ace/github-gherkin.user.js
-
-When you visit a github page for editing a feature you should see it syntax highlighted with our Gherkin mode. Try these:
-
-* https://github.com/cucumber/cucumber/edit/master/features/bootstrap.feature
-* https://github.com/cucumber/cucumber/edit/master/features/custom_formatter.feature
-
-Sometimes you have to load the page several times before it kicks in. Need to solve this...
-
 ## Contributing
 
 If you have fixed something, commit it to your fork of the repo and send a pull request.

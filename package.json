@@ -1,8 +1,0 @@
-{ "name" : "gherkin-syntax-highlighters"
-, "description" : "Syntax highlighters for Gherkin source"
-, "version": "1.0.0" 
-, "dependencies": 
-  { "paperboy": "~0.0.2" }
-, "engines":
-  { "node": "~0.4.12" }
-}
