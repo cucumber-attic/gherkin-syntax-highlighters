@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Editor</title>
+  <style type="text/css" media="screen">
+    body {
+        overflow: hidden;
+    }
+    
+    .editor { 
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+  </style>
+</head>
+<body>
+
+<pre class="editor" id="en">Feature: Feature
+  Scenario Outline: A scenario
+    # A comment
+    @tag @tagz
+    Given I have 4 cukes in my "big" and 'Given' Given belly
+      """
+      A doc string with Given
+      """
+    And a table:
+      | with | some |
+      | rows |      |
+</pre>
+    
+<script src="ace/build/src/ace.js"></script>
+<script src="ace/build/demo/kitchen-sink.js"></script>
+<script src="ace/build/src/theme-solarized_dark.js"></script>
+<script src="gherkin_highlight_rules.js"></script>
+<script src="gherkin.js"></script>
+<script>
+window.onload = function() {
+    var editor = ace.edit("en");
+    editor.setTheme("ace/theme/solarized_dark");
+    
+    var GherkinMode = require('ace/mode/gherkin').Mode;
+    editor.getSession().setMode(new GherkinMode());
+};
+</script>
+
+</body>
+</html>
