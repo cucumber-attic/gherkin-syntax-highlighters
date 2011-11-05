@@ -1,0 +1,39 @@
+# whatis.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp whatis.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=00 ff 00
+
+$BGCOLOUR=00 00 00
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=fa 5a 03 bold
+
+$KW_GROUP(kwb)=ff ff ff bold
+
+$KW_GROUP(kwc)=ef e2 19 bold
+
+$KW_GROUP(kwd)=e7 21 d3
+
+$NUMBER=ff ff 00
+
+$ESCAPECHAR=ff bb 00
+
+$STRING=ff bb 00
+
+$STRING_DIRECTIVE=ff bb 00
+
+$COMMENT=ff 00 00
+
+$DIRECTIVE=bf bf bf
+
+$LINE=99 99 99
+
+$SYMBOL=00 ff ff

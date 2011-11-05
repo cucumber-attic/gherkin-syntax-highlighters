@@ -1,0 +1,42 @@
+2002-08-08  Lorenzo Bettini  <lb-bl@foo>
+
+	* src/Makefile.am (source_highlight_SOURCES): correctly include
+	changelog_scanner.ll
+
+        * this is a comment without a file name
+
+2002-08-02  John Millaway  <millaway-bar@foo_bar-com>
+
+	* src/flex_scanner.ll: Added scanner for flex
+
+	* src/changelog_scanner.ll: Added scanner for ChangeLog
+
+	* src/Makefile.am: do not use .stamp files anymore, use flex's prefix
+
+2002-07-30  Lorenzo Bettini  <lb@foo>
+
+	* acinclude.m4 (LF_PROG_TXTC): fixed a little bug that shows up
+	only now with the new version of autoconf
+
+	* acconfig.h: removed, no longer needed with autoconf
+
+	* configure.in: use the new AC_LIBOBJ
+
+	* doc/Makefile.am: removed an extra EXTRA_DIST
+
+2002-07-21  Lorenzo Bettini  <lb@foo>
+
+	* src/python_scanner.ll: fixed a problem with string comments
+
+	* src/lib/genfun.cc (processFile): correctly set deleteOStream
+
+	* src/lib/startapp.cc (start): default to stdout also when -i
+	option is used.
+	(start): check whether "STDOUT" was specified as output
+
+	* src/lib/genfun.cc (print_xtop): always generate the correct header
+	for XHTML
+        (processFile): call LineNumberDecorator::reset so that if many
+        files are processed the current line number is correctly reset
+
+2002-07-10  Lorenzo Bettini  <lb@foo>

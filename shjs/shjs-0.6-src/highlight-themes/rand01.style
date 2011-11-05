@@ -1,0 +1,39 @@
+# rand01.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp rand01.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=12 1b 28
+
+$BGCOLOUR=ff ff ff
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=0a 7f 6d bold
+
+$KW_GROUP(kwb)=c4 26 38 bold
+
+$KW_GROUP(kwc)=e1 2f 76 bold
+
+$KW_GROUP(kwd)=00 00 00 bold
+
+$NUMBER=0d a3 44
+
+$ESCAPECHAR=a7 64 cb
+
+$STRING=2b 83 ba
+
+$STRING_DIRECTIVE=2b 83 ba
+
+$COMMENT=ab ab ab italic
+
+$DIRECTIVE=62 0a c6
+
+$LINE=90 a7 29
+
+$SYMBOL=00 00 de

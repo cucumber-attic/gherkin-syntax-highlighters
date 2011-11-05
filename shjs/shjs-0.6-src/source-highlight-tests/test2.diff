@@ -1,0 +1,43 @@
+diff -rc2P source-highlight-2.1.1/source-highlight.spec source-highlight-2.1.2/source-highlight.spec
+*** source-highlight-2.1.1/source-highlight.spec	2005-08-03 14:54:18.000000000 +0200
+--- source-highlight-2.1.2/source-highlight.spec	2005-08-25 16:11:37.000000000 +0200
+***************
+*** 7,12 ****
+  Summary:   syntax highlighting for source documents
+  Name:      source-highlight
+! Version:   2.1.1
+! Release:   2.1.1
+  License:   GPL
+  Group:     Utilities/Console
+--- 7,12 ----
+  Summary:   syntax highlighting for source documents
+  Name:      source-highlight
+! Version:   2.1.2
+! Release:   2.1.2
+  License:   GPL
+  Group:     Utilities/Console
+diff -rc2P source-highlight-2.1.1/src/latex.outlang source-highlight-2.1.2/src/latex.outlang
+*** source-highlight-2.1.1/src/latex.outlang	2005-07-12 22:21:46.000000000 +0200
+--- source-highlight-2.1.2/src/latex.outlang	2005-08-25 16:15:53.000000000 +0200
+***************
+*** 35,37 ****
+--- 35,38 ----
+  "--" "-\\/-"
+  "---" "-\\/-\\/-"
++ "\"" "\"{}" # avoids problems with some inputenc
+  end
+\ No newline at end of file
+diff -rc2P source-highlight-2.1.1/src/lib/messages.cc source-highlight-2.1.2/src/lib/messages.cc
+*** source-highlight-2.1.1/src/lib/messages.cc	2005-07-12 12:18:59.000000000 +0200
+--- source-highlight-2.1.2/src/lib/messages.cc	2005-08-25 16:08:44.000000000 +0200
+***************
+*** 86,87 ****
+--- 86,93 ----
+    exit(EXIT_FAILURE);
+  }
++ 
++ void foundBug(const std::string &error, const std::string &file, int line)
++ {
++   cerr << PACKAGE << ": " << error << ", " << file << ":" << line << endl;
++   exit(EXIT_FAILURE);
++ }

@@ -1,0 +1,41 @@
+# berries-dark.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp berries-dark.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=40 00 80
+
+$BGCOLOUR=80 bf ff
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=3f 2b f0 bold
+
+$KW_GROUP(kwb)=3f 2b f0
+
+$KW_GROUP(kwc)=a9 1e a7
+
+$KW_GROUP(kwd)=90 11 64 bold
+
+$NUMBER=20 75 5a
+
+$ESCAPECHAR=77 37 9a
+
+$STRING=c4 00 00
+
+$STRING_DIRECTIVE=c4 00 00
+
+$COMMENT=df 09 59 italic
+
+$SL-COMMENT=22 6a 27 italic
+
+$DIRECTIVE=06 28 cb
+
+$LINE=ff ff ff
+
+$SYMBOL=00 00 00 

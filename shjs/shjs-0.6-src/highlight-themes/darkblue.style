@@ -1,0 +1,21 @@
+# darkblue.style (taken from GVIM)
+# This file is part of highlight, a universal source code converter.
+# See README in the highlight directory for documentation.
+
+$DEFAULTCOLOUR=C7 C7 C7
+$BGCOLOUR=00 00 40
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=ff ff 60
+$KW_GROUP(kwb)=60 ff 60
+$KW_GROUP(kwc)=26 e0 e7
+$KW_GROUP(kwd)=ff ff ff bold
+$NUMBER=42 ca d9
+$ESCAPECHAR=ff a5 00
+$STRING=ff a0 a0
+$STRING_DIRECTIVE=ff a0 a0
+$COMMENT=80 a0 ff
+$SL-COMMENT=f0 83 de
+$DIRECTIVE=ff 80 ff
+$LINE=e5 d2 8e
+$SYMBOL=d8 e9 1b bold

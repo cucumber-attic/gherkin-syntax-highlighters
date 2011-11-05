@@ -1,0 +1,88 @@
+<html>
+<head>
+<script src="sh_main.min.js" type="text/javascript"></script>
+<script src="lang/sh_cpp.min.js" type="text/javascript"></script>
+<script src="lang/sh_perl.min.js" type="text/javascript"></script>
+<script src="scriptaculous-js-1.8.1/lib/prototype.js" type="text/javascript"></script>
+<script src="scriptaculous-js-1.8.1/src/unittest.js" type="text/javascript"></script>
+<link rel="stylesheet" href="scriptaculous-js-1.8.1/test/test.css" type="text/css">
+</head>
+<body>
+
+<h1>Unit tests</h1>
+
+<p>
+There are 15 tests to run.
+</p>
+
+<div id="testlog"></div>
+
+<hr>
+
+<div id="commentdiv">
+/* comment */
+</div>
+
+<pre class="sh_cpp">
+int main(void);
+</pre>
+
+<pre id="pre2" class="sh_cpp sh_sourceCode">
+int main(void);
+</pre>
+
+<pre class="sh_sourceCode sh_cpp">
+int main(void);
+</pre>
+
+<pre>
+</pre>
+
+<!-- test_addClass -->
+<pre class="sh_sourceCode sh_cpp">
+int main(void);
+</pre>
+
+<!-- multi-line for test_extractTags -->
+<pre id="test_extractTags">
+line 1
+line 2
+line 3
+</pre>
+
+<!-- perl -->
+<pre id="perl">
+m/bar/;
+</pre>
+
+<pre id="empty"></pre>
+
+<div id="nested"><div>
+int i;
+</div></div>
+
+<div id="markup">
+<a href="http://www.example.com/int">int</a> i;
+</div>
+
+<div id="overlap">
+in<b><i>t f</i></b>oo;
+</div>
+
+<div id="urls">
+/** &lt;gnombat@users.sourceforge.net&gt; */
+</div>
+
+<pre id="brs">
+line 1<br>line 2<br>line 3
+</pre>
+
+<!-- automatic loading -->
+<pre class="sh_java" id="automatic">
+public class X {}
+</pre>
+
+<script type="text/javascript" language="javascript" charset="utf-8" src="test-unit-scriptaculous.js"></script>
+
+</body>
+</html>

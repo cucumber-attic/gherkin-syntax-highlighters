@@ -1,0 +1,28 @@
+# the.style - style
+# This File is part of highlight, a universal source code converter.
+# See README in the highlight directory for documentation.
+
+$DEFAULTCOLOUR=00 00 00
+
+$BGCOLOUR=ff ff ff
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=00 00 ff
+$KW_GROUP(kwb)=88 00 88
+$KW_GROUP(kwc)=00 00 ff
+$KW_GROUP(kwd)=00 00 00
+
+$NUMBER=ff 00 00
+
+$ESCAPECHAR=00 00 00
+
+$STRING=00 00 88
+
+$STRING_DIRECTIVE=00 00 88
+
+$COMMENT=00 ff 00 italic
+
+$DIRECTIVE=ff 00 00
+
+$LINE=00 88 00

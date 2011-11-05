@@ -1,0 +1,29 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema targetNamespace="http://www.cedar.ac.uk/hepml/hepdata/0.1/"
+           xmlns="http://www.cedar.ac.uk/hepml/hepdata/0.1/"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+  <xs:simpleType name="errSourceType">
+    <xs:annotation>
+      <xs:documentation>Possible error sources</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="stat"/>
+      <xs:enumeration value="sys"/>
+
+      <xs:enumeration value="total"/>
+      <xs:enumeration value="unknown"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+<tomcat-user_lore>
+ foo
+</tomcat-user_lore>
+
+<tomcat-user_lore.bettini name="lorenzo">
+ bar
+</tomcat-user_lore.bettini>

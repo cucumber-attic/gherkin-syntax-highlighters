@@ -1,0 +1,39 @@
+# darkness.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp darkness.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=ff ff ff
+
+$BGCOLOUR=00 00 00
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=ff ff 00 bold
+
+$KW_GROUP(kwb)=00 ff 00
+
+$KW_GROUP(kwc)=26 e0 e7
+
+$KW_GROUP(kwd)=f3 46 27
+
+$NUMBER=61 9d e7
+
+$ESCAPECHAR=bf bf bf
+
+$STRING=ab ab 00 bold
+
+$STRING_DIRECTIVE=ab ab 00
+
+$COMMENT=88 88 88 italic
+
+$DIRECTIVE=1d a3 cf
+
+$LINE=00 88 88
+
+$SYMBOL=ff 00 ff

@@ -1,0 +1,27 @@
+body {
+  margin: 2px;
+}
+table {
+  border-collapse: collapse;
+}
+table, tr, td {
+  border: 1px solid black;
+}
+td {
+  width: 620px;
+  max-width: 620px;
+}
+pre {
+  width: 615px;
+  max-width: 615px;
+  overflow: hidden;
+  border: 1px dotted;
+  line-height: 20px;
+}
+pre#debug {
+  width: 1240px;
+  max-width: 1240px;
+  overflow: auto;
+  border: 1px dotted;
+  line-height: 20px;
+}

@@ -1,0 +1,39 @@
+# easter.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp easter.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=2C 7B 34
+
+$BGCOLOUR=ff ff 80
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=1d 45 d6 bold
+
+$KW_GROUP(kwb)=ed 0f 55 bold
+
+$KW_GROUP(kwc)=26 aa e7 bold
+
+$KW_GROUP(kwd)=1d 45 d6
+
+$NUMBER=e1 1a 70
+
+$ESCAPECHAR=ca 4b e3
+
+$STRING=ca 4b e3
+
+$STRING_DIRECTIVE=ca 4b e3
+
+$COMMENT=24 c8 15 italic
+
+$DIRECTIVE=15 83 b1
+
+$LINE=77 17 b7
+
+$SYMBOL=fa 47 00

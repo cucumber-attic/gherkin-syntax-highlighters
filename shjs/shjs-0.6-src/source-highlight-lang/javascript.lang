@@ -1,0 +1,23 @@
+include "c_comment.lang"
+
+keyword = "abstract|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|false|final|finally|for|function|goto|if|implements|in|instanceof|interface|native|new|null|private|protected|prototype|public|return|static|super|switch|synchronized|throw|throws|this|transient|true|try|typeof|var|volatile|while|with"
+
+(symbol,normal,symbol) = `(\+\+|--|\)|\])(\s*)(/=?(?![*/]))`
+(number,normal,symbol) = `(0x[[:xdigit:]]+|(?:[[:digit:]]*\.)?[[:digit:]]+(?:[eE][+-]?[[:digit:]]+)?)(\s*)(/(?![*/]))`
+(normal,symbol) = `([[:alpha:]$_][[:alnum:]$_]*\s*)(/=?(?![*/]))`
+
+regexp = '/(\\.|[^*\\/])(\\.|[^\\/])*/[gim]*'
+
+include "number.lang"
+
+include "c_string.lang"
+
+include "symbols.lang"
+
+cbracket = "{|}"
+
+# global object
+predef_var = "Math|Infinity|NaN|undefined|arguments"
+predef_func = "Array|Boolean|Date|Error|EvalError|Function|Number|Object|RangeError|ReferenceError|RegExp|String|SyntaxError|TypeError|URIError|decodeURI|decodeURIComponent|encodeURI|encodeURIComponent|eval|isFinite|isNaN|parseFloat|parseInt"
+
+include "function.lang"

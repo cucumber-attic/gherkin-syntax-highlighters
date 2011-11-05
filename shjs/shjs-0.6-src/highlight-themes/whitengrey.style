@@ -1,0 +1,37 @@
+# whitengrey.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp whitengrey.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=69 69 69
+
+$BGCOLOUR=ff ff ff
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=69 69 69 bold
+
+$KW_GROUP(kwb)=69 69 69
+
+$KW_GROUP(kwc)=69 69 69 bold
+
+$KW_GROUP(kwd)=00 00 00
+
+$NUMBER=bb 00 ff
+
+$ESCAPECHAR=00 88 00
+
+$STRING=00 88 00
+
+$STRING_DIRECTIVE=00 88 00
+
+$COMMENT=13 26 a2 italic
+
+$DIRECTIVE=47 00 00
+
+$LINE=00 00 00

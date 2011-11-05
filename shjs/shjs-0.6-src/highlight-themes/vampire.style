@@ -1,0 +1,39 @@
+# vampire.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp vampire.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=ff 00 00
+
+$BGCOLOUR=00 00 00
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=ff ff ff bold
+
+$KW_GROUP(kwb)=F3 5E 1E bold
+
+$KW_GROUP(kwc)=ff ff ff 
+
+$KW_GROUP(kwd)=7b c7 10
+
+$NUMBER=bb 00 ff
+
+$ESCAPECHAR=ff ff ff
+
+$STRING=bb 00 ff
+
+$STRING_DIRECTIVE=bb 00 ff
+
+$COMMENT=ab ab ab italic
+
+$DIRECTIVE=ab ab ab
+
+$LINE=F3 E6 51
+
+$SYMBOL=F3 E6 51

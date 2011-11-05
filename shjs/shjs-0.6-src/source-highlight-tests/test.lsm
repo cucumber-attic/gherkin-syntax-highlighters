@@ -1,0 +1,16 @@
+Begin3
+Title:          sourcehighlightide -- Some description
+Version:        0.1
+Entered-date:   
+Description:    
+Keywords:       KDE Qt
+Author:         Lorenzo Bettini <http://www.lorenzobettini.it>
+Maintained-by:  Lorenzo Bettini <http://www.lorenzobettini.it>
+Home-page:      
+Alternate-site: 
+Primary-site:   ftp://ftp.kde.org/pub/kde/unstable/apps/utils
+                xxxxxx  sourcehighlightide-0.1.tar.gz
+                xxx     sourcehighlightide-0.1.lsm
+Platform:       Linux. Needs KDE
+Copying-policy: GPL
+End

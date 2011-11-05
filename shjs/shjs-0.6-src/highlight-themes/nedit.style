@@ -1,0 +1,20 @@
+# nedit.style
+# This file is part of highlight, a universal source code converter.
+# See README in the highlight directory for documentation.
+
+$DEFAULTCOLOUR=00 00 00
+$BGCOLOUR=ff ff ff
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=00 00 00 bold
+$KW_GROUP(kwb)=a5 2a 2a bold
+$KW_GROUP(kwc)=dd a0 dd bold
+$KW_GROUP(kwd)=00 00 00
+$NUMBER=00 64 00
+$ESCAPECHAR=2e 8b 57
+$STRING=00 64 00
+$STRING_DIRECTIVE=27 40 8b
+$COMMENT=00 00 00 italic
+$DIRECTIVE=27 40 8b
+$LINE=77 77 77
+$SYMBOL=00 00 00 bold

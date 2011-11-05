@@ -1,0 +1,15 @@
+# comment line
+
+dn: cn=Foo Bar,mail=foo@bar.com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+objectclass: mozillaAbPersonAlpha
+givenName: Foo
+sn: Bar
+cn: Foo Bar
+mozillaNickname: albe
+mail: foo@bar.com
+modifytimestamp: 0Z
+my_odifytimestamp: 0Z

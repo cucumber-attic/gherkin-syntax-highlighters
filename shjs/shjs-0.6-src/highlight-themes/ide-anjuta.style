@@ -1,0 +1,36 @@
+# ide-anjuta.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp ide-anjuta.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=00 00 00
+
+$BGCOLOUR=ff ff ff
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=00 00 80 bold
+
+$KW_GROUP(kwb)=00 00 80
+
+$KW_GROUP(kwc)=00 00 ff
+$KW_GROUP(kwd)=00 00 00
+
+$NUMBER=00 88 00
+
+$ESCAPECHAR=dd bb 00
+
+$STRING=dd bb 00
+
+$STRING_DIRECTIVE=dd bb 00
+
+$COMMENT=ff 00 00 italic
+
+$DIRECTIVE=67 80 00
+
+$LINE=ff 00 00

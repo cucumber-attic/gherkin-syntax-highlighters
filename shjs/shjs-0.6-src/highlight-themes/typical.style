@@ -1,0 +1,39 @@
+# typical.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp typical.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=00 00 00
+
+$BGCOLOUR=ff ff ff
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=00 00 ff bold
+
+$KW_GROUP(kwb)=00 00 ff
+
+$KW_GROUP(kwc)=ec 7f 15
+
+$KW_GROUP(kwd)=00 00 00 bold
+
+$NUMBER=a9 00 a9
+
+$ESCAPECHAR=C4 2D A8
+
+$STRING=ff 00 00
+
+$STRING_DIRECTIVE=ff 00 00
+
+$COMMENT=66 66 66 italic
+
+$DIRECTIVE=00 b8 00
+
+$LINE=66 66 66
+
+$SYMBOL=ff 00 00

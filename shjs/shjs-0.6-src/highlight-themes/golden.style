@@ -1,0 +1,39 @@
+# golden.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp golden.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=dd bb 00
+
+$BGCOLOUR=00 00 00
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=ff ed 8a bold
+
+$KW_GROUP(kwb)=ff ed 8a
+
+$KW_GROUP(kwc)=de de de bold
+
+$KW_GROUP(kwd)=dd bb 00 bold
+
+$NUMBER=ff ff ff
+
+$ESCAPECHAR=ff 00 00
+
+$STRING=ff 00 00
+
+$STRING_DIRECTIVE=ff 00 00
+
+$COMMENT=97 83 45 italic
+
+$DIRECTIVE=ff dd aa
+
+$LINE=89 89 89
+
+$SYMBOL=ab ab ab

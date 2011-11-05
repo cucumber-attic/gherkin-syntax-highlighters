@@ -1,0 +1,20 @@
+# zellner.style (taken from GVIM)
+# This file is part of highlight, a universal source code converter.
+# See README in the highlight directory for documentation.
+
+$DEFAULTCOLOUR=00 00 00
+$BGCOLOUR=ff ff ff
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=a5 2a 2a
+$KW_GROUP(kwb)=00 00 ff
+$KW_GROUP(kwc)=22 5f 2d
+$KW_GROUP(kwd)=00 00 00 bold
+$NUMBER=ff 00 ff
+$ESCAPECHAR=ff 00 ff
+$STRING=ff 00 ff
+$STRING_DIRECTIVE=ff 00 ff
+$COMMENT=ff 00 00
+$SL-COMMENT=0b 81 0d
+$DIRECTIVE=a0 20 f0
+$LINE=88 88 88

@@ -1,0 +1,39 @@
+# greenlcd.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp greenlcd.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=00 bb 00
+
+$BGCOLOUR=00 34 00
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=00 ed 00 bold
+
+$KW_GROUP(kwb)=00 ed 00
+
+$KW_GROUP(kwc)=be ef 13
+
+$KW_GROUP(kwd)=c0 ff 73
+
+$NUMBER=ff ff ff
+
+$ESCAPECHAR=df df df
+
+$STRING=df df df
+
+$STRING_DIRECTIVE=df df df
+
+$COMMENT=88 88 88 italic
+
+$DIRECTIVE=bf bf bf
+
+$LINE=bc bc bc
+
+$SYMBOL=2f e7 a9

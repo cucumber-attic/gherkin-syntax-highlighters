@@ -1,0 +1,41 @@
+# night.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp night.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=dd 00 ff
+
+$BGCOLOUR=00 00 44
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=ff ff ff bold
+
+$KW_GROUP(kwb)=f1 15 7c bold
+
+$KW_GROUP(kwc)=7a ec 27 bold
+
+$KW_GROUP(kwd)=ff 06 cd bold
+
+$NUMBER=8e e1 19
+
+$ESCAPECHAR=82 d6 6d
+
+$STRING=ff ff ff
+
+$STRING_DIRECTIVE=ff ff ff
+
+$COMMENT=bf bf bf
+
+$SL-COMMENT=59 c9 f9
+
+$DIRECTIVE=00 bb 00
+
+$LINE=e7 ee 5c
+
+$SYMBOL=e7 ee 5c bold

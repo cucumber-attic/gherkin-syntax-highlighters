@@ -1,0 +1,71 @@
+% this is just to test latex highlighting
+% it will not compile with latex though :-)
+
+\runningheads{L.~Bettini, S.~Capecchi and B.~Venneri}
+{Double Dispatch in \CC}
+
+This is an higlighted \command.
+
+\lstdefinelanguage{xklaim}%
+  {morekeywords={if,else,then,endif,while,do,enddo,begin,end,rec,ref,declare,%
+      int,str,loc,process,bool,locname,ts,var,within,in,out,read,eval,newloc,%
+      go,true,false,not,and,or,nil,add,rm,newc,extern,%
+      inp,readp,forall,const,nodes,endnodes,on,print,logloc,phyloc,%
+      login,logout,accept,disconnected,accept,subscribe,unsubscribe,%
+      dirconnect,acceptconn,%
+      register,unregister,nodecoord,port,start,cons,%
+      return,new,object,class,mixin,def,redef,expect,next,this,red,exp,type},%
+    keywords=[2]{self},%
+    keywordstyle=[2]\ttfamily,%
+    alsoother=@,%
+    morecomment=[l]\#,%
+    sensitive=f,%
+    morestring=[b]"%
+   }[keywords,strings]
+
+\frame{
+\frametitle{Tuples and Pattern Matching}
+  \begin{itemize}
+  \item Tuples and Templates
+    \[
+    ("foo", 10+5, !x)
+    \]
+    \begin{itemize}
+    \item Formal Fields
+    \item Actual Fields
+    \end{itemize}
+  \item Pattern Matching:
+    \begin{itemize}
+    \item Formal fields match any field of the same type
+    \item Actual fields
+      match if identical
+    \end{itemize}
+  \end{itemize}
+\vspace{0.4cm}
+\begin{block}{}
+\begin{center}
+$("foo", 10+5, true)$ \alert{matches} $(!s, 15, !b)$
+\end{center}
+\end{block}
+}
+
+This is mathematic with \$\$:
+
+$$
+i = j
+$$
+
+the same but with \[ \]:
+
+\[
+i = j
+\]
+
+`Private, Protected and Virtual Methods').
+This line's body shouldn't have the highlighted '.
+
+These \`e \'e \"e are accents and not a string
+
+L.~Bettini
+
+\paragraph*{Typing rule for multi method invocation.}

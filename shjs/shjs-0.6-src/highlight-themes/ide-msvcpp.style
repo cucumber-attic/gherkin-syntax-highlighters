@@ -1,0 +1,37 @@
+# ide-msvcpp.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp ide-msvcpp.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=00 00 00
+
+$BGCOLOUR=ff ff ff
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=00 00 ff bold
+
+$KW_GROUP(kwb)=00 00 ff
+
+$KW_GROUP(kwc)=00 00 ff bold
+
+$KW_GROUP(kwd)=00 00 00
+
+$NUMBER=00 00 00
+
+$ESCAPECHAR=00 00 00
+
+$STRING=00 00 00
+
+$STRING_DIRECTIVE=00 00 00
+
+$COMMENT=00 80 00 italic
+
+$DIRECTIVE=00 00 ff
+
+$LINE=00 80 00

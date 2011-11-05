@@ -1,0 +1,39 @@
+# desert.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp desert.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=ff fd ec
+
+$BGCOLOUR=af 94 7e
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=fe f8 bc bold
+
+$KW_GROUP(kwb)=fe f8 bc
+
+$KW_GROUP(kwc)=00 00 00 bold
+
+$KW_GROUP(kwd)=f3 d2 66 bold
+
+$NUMBER=3e 3f 25
+
+$ESCAPECHAR=f6 f6 47
+
+$STRING=f6 f6 47
+
+$STRING_DIRECTIVE=f6 f6 47
+
+$COMMENT=a0 00 00 italic
+
+$DIRECTIVE=83 39 14
+
+$LINE=00 00 00
+
+$SYMBOL=66 57 4f

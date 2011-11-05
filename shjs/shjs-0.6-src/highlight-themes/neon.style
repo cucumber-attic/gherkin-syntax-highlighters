@@ -1,0 +1,35 @@
+# neon.style - style
+# This File is part of highlight, a universal source code converter.
+# See README in the highlight directory for documentation.
+# This theme was converted from the webcpp neon.style.scs theme by webcpp2highlight 0.1
+
+
+$DEFAULTCOLOUR=ff ff ff
+
+$BGCOLOUR=00 00 00
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=00 ff ff bold
+
+$KW_GROUP(kwb)=ff ff 00
+
+$KW_GROUP(kwc)=ef 13 47 bold
+
+$KW_GROUP(kwd)=ff ff ff bold
+
+$NUMBER=ff 00 ff
+
+$ESCAPECHAR=cd 00 ff
+
+$STRING=cd 00 ff
+
+$STRING_DIRECTIVE=cd 00 ff
+
+$COMMENT=00 ff 00 italic
+
+$DIRECTIVE=ff bb 00
+
+$LINE=55 ab ff
+
+$SYMBOL=ee 58 96 bold

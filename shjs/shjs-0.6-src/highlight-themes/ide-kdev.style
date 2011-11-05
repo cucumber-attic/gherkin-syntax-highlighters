@@ -1,0 +1,37 @@
+# ide-kdev.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp ide-kdev.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=00 00 00
+
+$BGCOLOUR=ff ff ff
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=60 00 00 bold
+
+$KW_GROUP(kwb)=60 00 00
+
+$KW_GROUP(kwc)=60 00 00 bold
+
+$KW_GROUP(kwd)=00 00 00
+
+$NUMBER=00 00 ff
+
+$ESCAPECHAR=ff 00 00
+
+$STRING=ff 00 00
+
+$STRING_DIRECTIVE=ff 00 00
+
+$COMMENT=bf bf bf italic
+
+$DIRECTIVE=00 80 00
+
+$LINE=bf bf bf

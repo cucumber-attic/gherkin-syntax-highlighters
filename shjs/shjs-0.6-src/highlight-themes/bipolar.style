@@ -1,0 +1,41 @@
+# bipolar.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp bipolar.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=d1 49 a6
+
+$BGCOLOUR=00 00 00
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=ee 85 e2 bold
+
+$KW_GROUP(kwb)=aa dd 8b bold
+
+$KW_GROUP(kwc)=72 d4 2c bold
+
+$KW_GROUP(kwd)=d5 19 93 bold
+
+$NUMBER=ff ff ff
+
+$ESCAPECHAR=9e f4 57
+
+$STRING=9e f4 57
+
+$STRING_DIRECTIVE=9e f4 57
+
+$COMMENT=35 d6 e5 italic
+
+$SL-COMMENT=5a ee 72 italic
+
+$DIRECTIVE=07 f6 bf
+
+$LINE=99 99 99
+
+$SYMBOL=34 8f ef

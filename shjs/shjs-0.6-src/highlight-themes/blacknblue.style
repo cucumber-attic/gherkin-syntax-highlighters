@@ -1,0 +1,39 @@
+# blacknblue.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp blacknblue.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=23 46 d5
+
+$BGCOLOUR=00 00 00
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=1e de dc bold
+
+$KW_GROUP(kwb)=c0 6c f8 bold
+
+$KW_GROUP(kwc)=ec ea 26
+
+$KW_GROUP(kwd)=1c 96 ed
+
+$NUMBER=c4 ac 60
+
+$ESCAPECHAR=cc c6 c6
+
+$STRING=cf c6 31
+
+$STRING_DIRECTIVE=cf c6 31
+
+$COMMENT=6f b2 c4 italic
+
+$DIRECTIVE=80 80 ff
+
+$SYMBOL=cc c6 c6
+
+$LINE=de e3 94

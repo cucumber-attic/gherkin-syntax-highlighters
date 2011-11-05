@@ -1,0 +1,39 @@
+# navy.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp navy.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=00 8b ff
+
+$BGCOLOUR=00 00 35
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=f8 c5 0b bold
+
+$KW_GROUP(kwb)=e1 e7 2f
+
+$KW_GROUP(kwc)=13 d8 ef
+
+$KW_GROUP(kwd)=ff ff ff
+
+$NUMBER=f8 7f f4
+
+$ESCAPECHAR=ff ff ff
+
+$STRING=ff ff ff
+
+$STRING_DIRECTIVE=ff ff ff
+
+$COMMENT=ff bb 00 italic
+
+$DIRECTIVE=bb 00 ff
+
+$LINE=88 88 88
+
+$SYMBOL=ff ff ff

@@ -1,0 +1,40 @@
+[BrowserBar]
+Width=295
+
+# a comment
+
+[Filebrowser]
+Dir History=
+Location=file://$HOME/
+Separate Directories=false
+Show Preview=false
+Show hidden files=false
+Sort by=Name
+Sort case insensitively=true
+Sort directories first=true
+Sort reversed=false
+View Style=Simple
+
+[General]
+HiddenOnExit=false
+Timeout=20
+
+[PlaylistColumnsLayout]
+ColumnNames=Filename,Title,Artist,AlbumArtist,Composer,Year,Album,DiscNumber,Track,BPM,Genre,Comment,Directory,Type,Length,Bitrate,SampleRate,Score,Rating,PlayCount,LastPlayed,Mood,Filesize
+ColumnOrder=0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22
+ColumnWidths=0,184,92,0,0,100,92,0,0,0,0,0,73,0,80,0,0,0,0,0,0,0,0
+ColumnsVersion=1
+SortAscending=true
+SortColumn=200
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=prova
+Exec=prova %i %m -caption "%c"
+Icon=prova
+Type=Application
+DocPath=prova/prova.html
+Comment=A KDE KPart Application
+Comment[fr]=Une application KPart pour KDE.
+Comment[pt_BR]=Um Aplicativo KPart do KDE
+Comment[it]=Applicazione KPart di KDE

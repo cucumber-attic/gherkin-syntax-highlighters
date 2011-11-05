@@ -1,0 +1,41 @@
+# dull.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp dull.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=65 65 65
+
+$BGCOLOUR=bf bf bf
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=35 35 35 bold
+
+$KW_GROUP(kwb)=32 41 c6
+
+$KW_GROUP(kwc)=ae 5a 16
+
+$KW_GROUP(kwd)=38 25 5c
+
+$NUMBER=16 93 0d
+
+$ESCAPECHAR=00 55 99
+
+$STRING=00 55 99
+
+$STRING_DIRECTIVE=00 55 99
+
+$COMMENT=d1 1d 20 italic
+
+$SL-COMMENT=00 88 00 italic
+
+$DIRECTIVE=00 00 33
+
+$LINE=61 28 09
+
+$SYMBOL=22 22 22

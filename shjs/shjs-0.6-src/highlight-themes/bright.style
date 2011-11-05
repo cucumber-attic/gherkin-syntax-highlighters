@@ -1,0 +1,39 @@
+# bright2.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp bright2.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=40 1e 7a
+
+$BGCOLOUR=ff ff ff
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=ff 30 30 bold
+
+$KW_GROUP(kwb)=f7 b9 2c
+
+$KW_GROUP(kwc)=00 00 ff
+
+$KW_GROUP(kwd)=d1 1c ed
+
+$NUMBER=32 ba 06
+
+$ESCAPECHAR=18 61 a7
+
+$STRING=18 61 a7
+
+$STRING_DIRECTIVE=18 61 a7
+
+$COMMENT=38 ad 24
+
+$DIRECTIVE=53 74 b0
+
+$LINE=9a 9a 9a
+
+$SYMBOL=30 30 ee

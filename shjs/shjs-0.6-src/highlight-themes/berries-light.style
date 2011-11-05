@@ -1,0 +1,41 @@
+# berries-light.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp berries-light.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=47 40 6d
+
+$BGCOLOUR=d7 ff ff
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=2c ae 1e bold
+
+$KW_GROUP(kwb)=8b 51 c0
+
+$KW_GROUP(kwc)=06 28 cb bold
+
+$KW_GROUP(kwd)=90 11 64 bold
+
+$NUMBER=20 75 5a
+
+$ESCAPECHAR=5f 81 b3
+
+$STRING=5f 81 b3
+
+$STRING_DIRECTIVE=5f 81 b3
+
+$COMMENT=9c 3c af italic
+
+$SL-COMMENT=22 6a 27 italic
+
+$DIRECTIVE=06 28 cb
+
+$LINE=00 00 00
+
+$SYMBOL=d2 07 3b

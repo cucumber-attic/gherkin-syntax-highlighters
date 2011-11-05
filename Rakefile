@@ -38,6 +38,9 @@ Gherkin::I18n.all.each do |i18n|
     end
   end
 
+  # This task will never run, since shjs sources are checked into git (too bad there is no git repo for shjs or we could pull it)
+  # via a submodule. The main reason it's checked in is so that github pages have the scripts available.
+  # We're keeping this task to make it easier to upgrade in the future.
   file 'shjs/shjs-0.6-src/sh2js.pl' do
     unless File.exist?('shjs/shjs-0.6-src/sh2js.pl') # Rake bug?
       sh 'wget http://sourceforge.net/projects/shjs/files/shjs/0.6/shjs-0.6-src.zip/download -O shjs/shjs-0.6-src.zip'

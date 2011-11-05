@@ -1,0 +1,137 @@
+body {
+font-family: Arial,Helvetica,sans-serif;
+font-size: small;
+font-style: normal;
+background-color : #F9F9F9;
+}
+
+.box {
+  border-width: 2px;
+  border-color: green;
+  border-style: solid;
+  font-style: normal;
+  font-weight: lighter;
+  font-family: verdana, sans-serif;
+  font-size: 0.8em;
+  margin-right:2em;
+  margin-bottom:2em;
+  margin-top:2em;
+}
+
+.maintitle {
+font-weight:bold;
+text-align: center;
+font-size:large;
+}
+
+.domanda {
+font-weight:bold;
+}
+
+.risposta {  
+font-style: italic;
+}
+
+.title {
+background-color:lightgreen;
+font-weight:bold;
+text-align:center;
+}
+
+.box li {
+ list-style-position:outside;
+ list-style-type:none;
+}
+
+.box ul {
+ padding-left: 5px;
+}
+
+
+.idimage {
+padding-left: 5px;
+padding-right: 20px;
+padding-top:5px;
+border: none;
+}
+
+
+#heading {
+width: 100%;
+margin-bottom:5px;
+/* padding-top:10px; 
+padding-bottom:10px; */
+text-align:center;
+background-color:#75ACCF;
+font-weight:bolder;
+font-size:large;
+}
+
+#bottom {
+width: 100%;
+top:auto;
+clear:both;
+text-align:center;
+background-color:lightgreen;
+font-weight:bolder;
+/* padding-top:10px;
+padding-bottom:10px; */
+}
+
+#leftcol {
+float:left;
+width:30%;
+}
+
+#altro {
+background-color: #e0e0e0;
+}
+
+#navbar {
+border-color: #d0d0d0;
+}
+
+#main {
+float:right;
+width: 70%;
+/* background-image: url(img_rubinetto_photocopy.jpg); 
+background-position: bottom right; 
+background-repeat: no-repeat; */
+}
+
+#menu2 {
+  display:table;
+  padding:0; 
+  margin:0 auto; 
+  list-style-type:none;
+  white-space:nowrap;
+font-size:smaller;
+  }
+#menu2 li {
+  display:table-cell;
+  }
+* html #menu2 li {
+  float:left;
+  }
+#menu2 a {
+  width:auto;
+  display:block;
+  padding:4px 16px;
+  color:#fff; 
+  background:#08c; 
+  border:1px solid #fff; 
+  text-decoration:none;
+  }
+* html #menu2 a {
+  float:left;
+  }
+#menu2 a:hover {
+  color:#000; 
+  background:#d4d4d4;
+  }
+
+.container {clear:both; text-decoration:none;}
+
+
+#info {text-align:center;}
+#info p {clear:both; text-align:left; margin-left:15px;}

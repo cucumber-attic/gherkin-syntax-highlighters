@@ -1,0 +1,41 @@
+# contrast.style - style
+
+# This File is part of highlight, a universal source code converter.
+
+# See README in the highlight directory for documentation.
+
+# This theme was converted from the webcpp contrast.style.scs theme by webcpp2highlight 0.1
+
+
+
+$DEFAULTCOLOUR=00 00 ff
+
+$BGCOLOUR=ed 61 04
+
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=ff ff ff bold
+
+$KW_GROUP(kwb)=ff ff ff bold
+
+$KW_GROUP(kwc)=11 f8 0c bold
+
+$KW_GROUP(kwd)=ff f7 00 bold
+
+$NUMBER=97 1a d8
+
+$ESCAPECHAR=11 f8 0c
+
+$STRING=11 f8 0c
+
+$STRING_DIRECTIVE=11 f8 0c
+
+$COMMENT=00 00 00
+
+$SL-COMMENT=00 00 00
+
+$DIRECTIVE=7b 44 e0
+
+$LINE=00 00 00
+
+$SYMBOL=de de de bold

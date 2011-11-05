@@ -1,0 +1,18 @@
+diff -rP source-highlight-2.1.1/source-highlight.spec source-highlight-2.1.2/source-highlight.spec
+9,10c9,10
+< Version:   2.1.1
+< Release:   2.1.1
+---
+> Version:   2.1.2
+> Release:   2.1.2
+diff -rP source-highlight-2.1.1/src/latex.outlang source-highlight-2.1.2/src/latex.outlang
+36a37
+> "\"" "\"{}" # avoids problems with some inputenc
+diff -rP source-highlight-2.1.1/src/lib/messages.cc source-highlight-2.1.2/src/lib/messages.cc
+87a88,93
+> 
+> void foundBug(const std::string &error, const std::string &file, int line)
+> {
+>   cerr << PACKAGE << ": " << error << ", " << file << ":" << line << endl;
+>   exit(EXIT_FAILURE);
+> }

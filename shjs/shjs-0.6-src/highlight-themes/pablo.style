@@ -1,0 +1,20 @@
+# pablo.style (taken from GVIM)
+# This file is part of highlight, a universal source code converter.
+# See README in the highlight directory for documentation.
+
+$DEFAULTCOLOUR=ff ff ff
+$BGCOLOUR=00 00 00
+$FONTSIZE=10
+
+$KW_GROUP(kwa)=c0 c0 00 bold
+$KW_GROUP(kwb)=00 c0 00 bold
+$KW_GROUP(kwc)=00 00 c0 bold
+$KW_GROUP(kwd)=ff 22 b9
+$NUMBER=00 ff ff
+$ESCAPECHAR=00 00 ff
+$STRING=00 ff ff
+$STRING_DIRECTIVE=00 ff ff
+$COMMENT=80 80 80
+$DIRECTIVE=00 ff 00
+$LINE=80 80 80
+$SYMBOL=ff 00 00

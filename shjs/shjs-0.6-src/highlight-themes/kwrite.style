@@ -1,0 +1,18 @@
+# kwrite - style
+# This File is part of highlight, a universal source code converter.
+# See README in the highlight directory for documentation.
+
+$DEFAULTCOLOUR=00 00 00
+$BGCOLOUR=ff ff ff
+$FONTSIZE=10
+$KW_GROUP(kwa)=00 00 00 bold
+$KW_GROUP(kwb)=83 00 00
+$KW_GROUP(kwc)=00 00 00 bold
+$KW_GROUP(kwd)=01 01 81 
+$NUMBER=29 28 ff
+$ESCAPECHAR=ff 00 ff
+$STRING=ff 00 00
+$STRING_DIRECTIVE=81 81 00
+$COMMENT=83 81 83 italic
+$DIRECTIVE=00 82 00
+$LINE=55 55 55
