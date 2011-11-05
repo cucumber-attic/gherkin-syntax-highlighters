@@ -5,14 +5,14 @@ require 'erb'
 CLEAN.include('*/*.js', 'src-highlite/*.lang')
 CLOBBER.include('shjs/shjs-0.6-src/**/*')
 
-task :default => [:highlight, :shjs]
+task :default => [:highlightjs, :shjs, :ace]
 
 Gherkin::I18n.all.each do |i18n|
   iso = i18n.underscored_iso_code
 
   # Highlight.js
 
-  task :highlight => "highlight.js/gherkin_#{iso}.js"
+  task :highlightjs => "highlight.js/gherkin_#{iso}.js"
 
   file "highlight.js/gherkin_#{iso}.js" => 'highlight.js/template.erb' do
     template = ERB.new(IO.read('highlight.js/template.erb'), nil, '-')
@@ -25,9 +25,9 @@ Gherkin::I18n.all.each do |i18n|
 
   # SHJS
 
-  task :shjs => "shjs/gherkin_#{iso}.js"
+  task :shjs => "shjs/sh_gherkin_#{iso}.js"
 
-  file "shjs/gherkin_#{iso}.js" => ['shjs/shjs-0.6-src/sh2js.pl', "src-highlite/gherkin_#{iso}.lang"] do
+  file "shjs/sh_gherkin_#{iso}.js" => ['shjs/shjs-0.6-src/sh2js.pl', "src-highlite/gherkin_#{iso}.lang"] do
     Dir.chdir('shjs/shjs-0.6-src') do
       begin
         sh "perl sh2js.pl ../../src-highlite/gherkin_#{iso}.lang > ../sh_gherkin_#{iso}.js"
@@ -52,13 +52,27 @@ Gherkin::I18n.all.each do |i18n|
 
   file "src-highlite/gherkin_#{iso}.lang" => 'src-highlite/template.erb' do
     template = ERB.new(IO.read('src-highlite/template.erb'), nil, '-')
-    keywords = Gherkin::I18n::KEYWORD_KEYS.map do 
-      |key| i18n.keywords(key)
+    keywords = Gherkin::I18n::KEYWORD_KEYS.map do |key| 
+      i18n.keywords(key)
     end.flatten.uniq.reverse.map do |kw| 
       kw == '* ' ? '\\* ' : kw.gsub(/'/, "\\'")
     end.join('|')
 
     File.open("src-highlite/gherkin_#{iso}.lang", 'wb') do |io|
+      io.write(template.result(binding))
+    end
+  end
+
+  # Ace
+
+  task :ace => "ace/mode-gherkin-#{iso}.js"
+
+  file "ace/mode-gherkin-#{iso}.js" => 'ace/template.erb' do |f|
+    template = ERB.new(IO.read('ace/template.erb'), nil, '-')
+    feature_element_keywords = Gherkin::I18n::FEATURE_ELEMENT_KEYS.map {|key| i18n.keywords(key)}.flatten.uniq.reverse.join('|')
+    step_keywords            = Gherkin::I18n::STEP_KEYWORD_KEYS.map {|key| i18n.keywords(key)}.flatten.uniq.reverse.map {|kw| kw == '* ' ? '\\\\* ' : kw}.join('|')
+
+    File.open(f.name, 'wb') do |io|
       io.write(template.result(binding))
     end
   end

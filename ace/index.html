@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Editor</title>
+  <style type="text/css" media="screen">
+    body {
+        overflow: hidden;
+    }
+    
+    .editor { 
+        position: absolute;
+        width: 500px;
+        height: 300px;
+    }
+    
+    #en {
+      top: 0;
+    }
+
+    #tr {
+      top: 300px;
+    }
+  </style>
+</head>
+<body>
+
+<pre class="editor" id="en">Feature: Feature
+  Background: hello
+
+  Scenario Outline: A scenario
+    # A comment
+    @tag @tagz
+    Given I have 4 cukes in my "big" and 'Given' Given belly
+      """
+      A doc string with Given
+      """
+    And a table:
+      | with | some |
+      | rows |      |
+</pre>
+
+<pre class="editor" id="tr"># language: tr
+Özellik: Bölme
+  Gülünç hatalardan sakınmak için
+  Bir kasiyer sayıları bölebilmeli
+
+  Senaryo: Doğal sayılar
+    Diyelim ki hesap makinesine 3 girdim
+    Ve hesap makinesine 2 girdim
+    Eğer ki böl tuşuna basarsam
+    O zaman ekrandaki sonuç 1.5 olmalı
+</pre>
+
+<script src="ace/build/src/ace.js"></script>
+<script src="ace/build/demo/kitchen-sink.js"></script>
+<script src="ace/build/src/theme-solarized_dark.js"></script>
+<script src="mode-gherkin-en.js"></script>
+<script src="mode-gherkin-tr.js"></script>
+<script>
+function aceify(lang) {
+  var editor = ace.edit(lang);
+  editor.setTheme("ace/theme/solarized_dark");
+  var GherkinMode = require('ace/mode/gherkin-' + lang).Mode;
+  editor.getSession().setMode(new GherkinMode());
+}
+
+window.onload = function() {
+  aceify('en');
+  aceify('tr');
+};
+</script>
+
+</body>
+</html>
