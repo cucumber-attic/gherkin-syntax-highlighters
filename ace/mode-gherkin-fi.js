@@ -1,4 +1,4 @@
-define('ace/mode/gherkin', function(require, exports, module) {
+define('ace/mode/gherkin-fi', function(require, exports, module) {
 
 var oop = require("pilot/oop");
 var TextMode = require("ace/mode/text").Mode;
@@ -20,11 +20,11 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:Feature|Background|Scenario|Scenario Outline|Examples):",
+                regex : "^\\s*(?:Tapaukset|Tapausaihio|Tapaus|Tausta|Ominaisuus):",
             },
             {
                 token : "keyword",
-                regex : "^\\s*(?:Given |When |Then |And |But )"
+                regex : "^\\s*(?:Mutta |Ja |Niin |Kun |Oletetaan |\\* )"
             },
             {
                 token : "string",           // multi line """ string start

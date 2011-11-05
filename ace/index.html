@@ -10,12 +10,17 @@
     }
     
     .editor { 
-        margin: 0;
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        width: 500px;
+        height: 300px;
+    }
+    
+    #en {
+      top: 0;
+    }
+
+    #tr {
+      top: 300px;
     }
   </style>
 </head>
@@ -35,18 +40,35 @@
       | with | some |
       | rows |      |
 </pre>
-    
+
+<pre class="editor" id="tr"># language: tr
+Özellik: Bölme
+  Gülünç hatalardan sakınmak için
+  Bir kasiyer sayıları bölebilmeli
+
+  Senaryo: Doğal sayılar
+    Diyelim ki hesap makinesine 3 girdim
+    Ve hesap makinesine 2 girdim
+    Eğer ki böl tuşuna basarsam
+    O zaman ekrandaki sonuç 1.5 olmalı
+</pre>
+
 <script src="ace/build/src/ace.js"></script>
 <script src="ace/build/demo/kitchen-sink.js"></script>
 <script src="ace/build/src/theme-solarized_dark.js"></script>
-<script src="mode-gherkin.js"></script>
+<script src="mode-gherkin-en.js"></script>
+<script src="mode-gherkin-tr.js"></script>
 <script>
+function aceify(lang) {
+  var editor = ace.edit(lang);
+  editor.setTheme("ace/theme/solarized_dark");
+  var GherkinMode = require('ace/mode/gherkin-' + lang).Mode;
+  editor.getSession().setMode(new GherkinMode());
+}
+
 window.onload = function() {
-    var editor = ace.edit("en");
-    editor.setTheme("ace/theme/solarized_dark");
-    
-    var GherkinMode = require('ace/mode/gherkin').Mode;
-    editor.getSession().setMode(new GherkinMode());
+  aceify('en');
+  aceify('tr');
 };
 </script>
 
