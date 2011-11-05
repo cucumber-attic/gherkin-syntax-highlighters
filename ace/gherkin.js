@@ -20,7 +20,7 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:Feature|Scenario|Scenario Outline|Examples):",
+                regex : "^\\s*(?:Feature|Background|Scenario|Scenario Outline|Examples):",
             },
             {
                 token : "keyword",
