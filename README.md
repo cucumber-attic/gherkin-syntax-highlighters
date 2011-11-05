@@ -39,6 +39,8 @@ When you visit a github page for editing a feature you should see it syntax high
 * https://github.com/cucumber/cucumber/edit/master/features/bootstrap.feature
 * https://github.com/cucumber/cucumber/edit/master/features/custom_formatter.feature
 
+Sometimes you have to load the page several times before it kicks in. Need to solve this...
+
 ## Contributing
 
 If you have fixed something, commit it to your fork of the repo and send a pull request.
