@@ -1,0 +1,23 @@
+{ "name" : "gherkin-ace"
+, "description" : "I18n Gherkin modes for Ace"
+, "keywords" : [ "testing", "bdd", "cucumber", "gherkin", "tests" ]
+, "version" : "1.0.0"
+, "homepage" : "http://github.com/cucumber/gherkin-syntax-highlighters"
+, "author" : "Aslak Hellesøy <aslak.hellesoy@gmail.com>"
+, "contributors" : [ "Aslak Hellesøy <aslak.hellesoy@gmail.com>" ]
+, "repository" :
+  { "type" : "git"
+  , "url" : "git://github.com/cucumber/gherkin-syntax-highlighters.git"
+  }
+, "bugs" :
+  { "mail" : "cukes@googlegroups.com"
+  , "url" : "http://github.com/cucumber/gherkin-syntax-highlighters/issues"
+  }
+, "directories" : { "lib" : "." }
+, "licenses" :
+  [ { "type" : "MIT"
+    , "url" : "http://github.com/cucumber/gherkin-syntax-highlighters/raw/master/LICENSE"
+    }
+  ]
+, "devDependencies" : { "uglify-js" : "1.1.1" }
+}
