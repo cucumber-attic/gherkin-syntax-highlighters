@@ -6,7 +6,7 @@ I18n Gherkin syntax highlighting for several highlighting engines:
 * [Highlight.js](http://softwaremaniacs.org/soft/highlight/en/)
 * [Pygments](http://pygments.org/) - (See [issue 4](https://github.com/cucumber/gherkin-syntax-highlighters/issues/4))
 
-See `index.html` in each subdirectory for sample usage.
+Examples are [here](http://cucumber.github.com/gherkin-syntax-highlighters).
 
 ## Hacking
 
