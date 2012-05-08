@@ -1,1 +1,1 @@
-gem 'gherkin', '2.6.2'
+gem 'gherkin'

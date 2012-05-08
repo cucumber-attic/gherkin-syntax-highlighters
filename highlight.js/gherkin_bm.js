@@ -1,10 +1,10 @@
-hljs.LANGUAGES.gherkin_cs = function() {
+hljs.LANGUAGES.gherkin_bm = function() {
   return {
     defaultMode: {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Ale |A |A také |Pak |Když |Pokud |\\* |Příklady|Osnova scénáře|Náčrt Scénáře|Scénář|Kontext|Pozadí|Požadavek)',
+          begin: '^\\s*(Tetapi |Dan |Kemudian |Apabila |Bagi |\\* |Contoh|Menggariskan Senario|Senario|Latar Belakang|Fungsi)',
           relevance: 0
         },
         {
