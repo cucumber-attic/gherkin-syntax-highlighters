@@ -7,10 +7,26 @@ CLOBBER.include('shjs/shjs-0.6-src/**/*')
 
 task :default => [:highlightjs, :shjs, :ace]
 
+# SHJS - http://shjs.sourceforge.net/ (generated from .lang files from Source Highlight below)
+def sh2js(name)
+  file "shjs/sh_#{name}.js" => ['shjs/shjs-0.6-src/sh2js.pl', "src-highlite/#{name}.lang"] do
+    Dir.chdir('shjs/shjs-0.6-src') do
+      begin
+        sh "perl sh2js.pl ../../src-highlite/#{name}.lang > ../sh_#{name}.js"
+      rescue => e
+        e.message << "\n\n    You may have to run `[sudo] cpan Parse::RecDescent`\n\n"
+        raise e
+      end
+    end
+  end
+
+  task :shjs => "shjs/sh_#{name}.js"
+end
+
 Gherkin::I18n.all.each do |i18n|
   iso = i18n.underscored_iso_code
 
-  # Highlight.js
+  # Highlight.js - http://softwaremaniacs.org/soft/highlight/en/
 
   task :highlightjs => "highlight.js/gherkin_#{iso}.js"
 
@@ -23,20 +39,7 @@ Gherkin::I18n.all.each do |i18n|
     end
   end
 
-  # SHJS
-
-  task :shjs => "shjs/sh_gherkin_#{iso}.js"
-
-  file "shjs/sh_gherkin_#{iso}.js" => ['shjs/shjs-0.6-src/sh2js.pl', "src-highlite/gherkin_#{iso}.lang"] do
-    Dir.chdir('shjs/shjs-0.6-src') do
-      begin
-        sh "perl sh2js.pl ../../src-highlite/gherkin_#{iso}.lang > ../sh_gherkin_#{iso}.js"
-      rescue => e
-        e.message << "\n\n    You may have to run `[sudo] cpan Parse::RecDescent`\n\n"
-        raise e
-      end
-    end
-  end
+  sh2js("gherkin_#{iso}")
 
   # This task will never run, since shjs sources are checked into git (too bad there is no git repo for shjs or we could pull it)
   # via a submodule. The main reason it's checked in is so that github pages have the scripts available.
@@ -82,3 +85,4 @@ Gherkin::I18n.all.each do |i18n|
 
 end
 
+sh2js("clojure")
