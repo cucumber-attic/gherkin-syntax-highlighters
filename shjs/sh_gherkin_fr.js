@@ -50,7 +50,7 @@ sh_languages['gherkin_fr'] = [
     ],
     [
       /\|/g,
-      'sh_symbol',
+      'sh_specialchar',
       -1
     ]
   ],

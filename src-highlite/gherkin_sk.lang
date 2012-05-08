@@ -14,5 +14,5 @@ string delim "'" "'"  escape "\\"
 
 type = '(@[^@\r\n\t ]+)'
 
-symbol = "\|"
+specialchar = "\|"
 
