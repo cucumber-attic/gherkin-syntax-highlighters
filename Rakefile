@@ -8,11 +8,11 @@ CLOBBER.include('shjs/shjs-0.6-src/**/*')
 task :default => [:highlightjs, :shjs, :ace]
 
 # SHJS - http://shjs.sourceforge.net/ (generated from .lang files from Source Highlight below)
-def sh2js(name)
-  file "shjs/sh_#{name}.js" => ['shjs/shjs-0.6-src/sh2js.pl', "src-highlite/#{name}.lang"] do
+def sh2js(name, lang)
+  file "shjs/sh_#{name}.js" => ['shjs/shjs-0.6-src/sh2js.pl', lang] do
     Dir.chdir('shjs/shjs-0.6-src') do
       begin
-        sh "perl sh2js.pl ../../src-highlite/#{name}.lang > ../sh_#{name}.js"
+        sh "perl sh2js.pl ../../#{lang} > ../sh_#{name}.js"
       rescue => e
         e.message << "\n\n    You may have to run `[sudo] cpan Parse::RecDescent`\n\n"
         raise e
@@ -39,7 +39,7 @@ Gherkin::I18n.all.each do |i18n|
     end
   end
 
-  sh2js("gherkin_#{iso}")
+  sh2js("gherkin_#{iso}", "src-highlite/gherkin_#{iso}.lang")
 
   # This task will never run, since shjs sources are checked into git (too bad there is no git repo for shjs or we could pull it)
   # via a submodule. The main reason it's checked in is so that github pages have the scripts available.
@@ -85,4 +85,5 @@ Gherkin::I18n.all.each do |i18n|
 
 end
 
-sh2js("clojure")
+sh2js("clojure", "src-highlite/contrib/clojure.lang")
+sh2js("lua",     "src-highlite/contrib/lua.lang") # Slightly simplified from original to make sh2js.pl parse it
