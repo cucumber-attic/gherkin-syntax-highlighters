@@ -1,0 +1,20 @@
+# Taken from https://gist.github.com/1755253
+# Clojure syntax highlighting for GNU source-highlight
+# rocks with SHJS
+
+comment start ";"
+
+include "number.lang"
+
+vardef SPECIALCHAR = '\\.'
+
+environment string delim "\"" "\"" begin
+  specialchar = $SPECIALCHAR
+end
+
+type = "int|byte|boolean|char|long|float|double|short|void"
+keyword = "defn|defrecord|defmacro|defmulti|defmethod|def|deftype|defprotocol|if|when|case|cond|loop|recur|fn|ns|import|require|use"
+predef_func = "println|doc|pprint|print|get|assoc|cons|conj|first|last|rest|dissoc|type|class"
+
+include "symbols.lang"
+symbol = "{|}|[|]"

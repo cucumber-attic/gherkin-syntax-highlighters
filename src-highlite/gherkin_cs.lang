@@ -2,7 +2,7 @@ include "script_comment.lang"
 
 include "number.lang"
 
-keyword = '^([[:space:]]*(?:Ale |A také |A |Pak |Když |Pokud |\* |Příklady|Osnova scénáře|Náčrt Scénáře|Scénář|Kontext|Pozadí|Požadavek))'
+keyword = '^([[:space:]]*(?:Ale |A |A také |Pak |Když |Pokud |\* |Příklady|Osnova scénáře|Náčrt Scénáře|Scénář|Kontext|Pozadí|Požadavek))'
 
 comment = '^([[:space:]]*\'(?:[^\\\']|\\.)*\'[[:space:]]*|[[:space:]]*\"(?:[^\\\"]|\\.)*\"[[:space:]]*)$'
 
@@ -14,5 +14,5 @@ string delim "'" "'"  escape "\\"
 
 type = '(@[^@\r\n\t ]+)'
 
-symbol = "\|"
+specialchar = "\|"
 

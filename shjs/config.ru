@@ -1,0 +1,1 @@
+run Rack::Directory.new(File.dirname(__FILE__))

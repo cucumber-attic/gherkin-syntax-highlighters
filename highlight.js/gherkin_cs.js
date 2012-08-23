@@ -4,7 +4,7 @@ hljs.LANGUAGES.gherkin_cs = function() {
       contains: [
         {
           className: 'keyword',
-          begin: '^\\s*(Ale |A také |A |Pak |Když |Pokud |\\* |Příklady|Osnova scénáře|Náčrt Scénáře|Scénář|Kontext|Pozadí|Požadavek)',
+          begin: '^\\s*(Ale |A |A také |Pak |Když |Pokud |\\* |Příklady|Osnova scénáře|Náčrt Scénáře|Scénář|Kontext|Pozadí|Požadavek)',
           relevance: 0
         },
         {
