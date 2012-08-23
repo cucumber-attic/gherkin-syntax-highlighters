@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/cucumber/gherkin-syntax-highlighters.png)](http://travis-ci.org/cucumber/gherkin-syntax-highlighters)
 I18n Gherkin syntax highlighting for several highlighting engines:
 
 * [Ace](http://ace.ajax.org/)
