@@ -64,6 +64,7 @@ function aceify(lang) {
   editor.setTheme("ace/theme/solarized_dark");
   var GherkinMode = require('ace/mode/gherkin-' + lang).Mode;
   editor.getSession().setMode(new GherkinMode());
+  editor.getSession().setTabSize(2);
 }
 
 window.onload = function() {
