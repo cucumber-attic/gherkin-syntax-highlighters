@@ -1,6 +1,6 @@
 define('ace/mode/gherkin-en_au', function(require, exports, module) {
 
-var oop = require("pilot/oop");
+var oop = require("../lib/oop");
 var TextMode = require("ace/mode/text").Mode;
 var Tokenizer = require("ace/tokenizer").Tokenizer;
 var MatchingBraceOutdent = require("ace/mode/matching_brace_outdent").MatchingBraceOutdent;
@@ -20,11 +20,11 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:Cobber|Blokes|Mate|Background|Crikey):",
+                regex : "^\\s*(?:You'll wanna|Reckon it's like|Awww, look mate|First off|Pretty much):",
             },
             {
                 token : "keyword",
-                regex : "^\\s*(?:Cept |N |Ya gotta |When |Ya know how |\\* )"
+                regex : "^\\s*(?:Yeah nah |Too right |But at the end of the day I reckon |It's just unbelievable |Y'know |\\* )"
             },
             {
                 token : "string",           // multi line """ string start

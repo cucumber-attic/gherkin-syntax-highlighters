@@ -1,6 +1,6 @@
 define('ace/mode/gherkin-bm', function(require, exports, module) {
 
-var oop = require("pilot/oop");
+var oop = require("../lib/oop");
 var TextMode = require("ace/mode/text").Mode;
 var Tokenizer = require("ace/tokenizer").Tokenizer;
 var MatchingBraceOutdent = require("ace/mode/matching_brace_outdent").MatchingBraceOutdent;
@@ -20,7 +20,7 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:Contoh|Menggariskan Senario|Senario|Latar Belakang|Fungsi):",
+                regex : "^\\s*(?:Contoh |Menggariskan Senario |Senario|Latar Belakang|Fungsi):",
             },
             {
                 token : "keyword",

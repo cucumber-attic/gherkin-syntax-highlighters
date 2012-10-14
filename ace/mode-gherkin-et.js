@@ -1,6 +1,6 @@
 define('ace/mode/gherkin-et', function(require, exports, module) {
 
-var oop = require("pilot/oop");
+var oop = require("../lib/oop");
 var TextMode = require("ace/mode/text").Mode;
 var Tokenizer = require("ace/tokenizer").Tokenizer;
 var MatchingBraceOutdent = require("ace/mode/matching_brace_outdent").MatchingBraceOutdent;

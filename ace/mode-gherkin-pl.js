@@ -1,6 +1,6 @@
 define('ace/mode/gherkin-pl', function(require, exports, module) {
 
-var oop = require("pilot/oop");
+var oop = require("../lib/oop");
 var TextMode = require("ace/mode/text").Mode;
 var Tokenizer = require("ace/tokenizer").Tokenizer;
 var MatchingBraceOutdent = require("ace/mode/matching_brace_outdent").MatchingBraceOutdent;
@@ -20,11 +20,11 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:Przykłady|Szablon scenariusza|Scenariusz|Założenia|Właściwość):",
+                regex : "^\\s*(?:Przykłady|Szablon scenariusza|Scenariusz|Założenia|Potrzeba biznesowa|Aspekt|Funkcja|Właściwość):",
             },
             {
                 token : "keyword",
-                regex : "^\\s*(?:Ale |I |Oraz |Wtedy |Jeśli |Jeżeli |Mając |Zakładając |\\* )"
+                regex : "^\\s*(?:Ale |I |Oraz |Wtedy |Kiedy |Gdy |Jeśli |Jeżeli |Mając |Zakładając |\\* )"
             },
             {
                 token : "string",           // multi line """ string start

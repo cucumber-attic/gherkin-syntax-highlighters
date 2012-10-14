@@ -1,6 +1,6 @@
 define('ace/mode/gherkin-zh_tw', function(require, exports, module) {
 
-var oop = require("pilot/oop");
+var oop = require("../lib/oop");
 var TextMode = require("ace/mode/text").Mode;
 var Tokenizer = require("ace/tokenizer").Tokenizer;
 var MatchingBraceOutdent = require("ace/mode/matching_brace_outdent").MatchingBraceOutdent;
@@ -24,7 +24,7 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword",
-                regex : "^\\s*(?:但是|並且|而且|那麼|當|假設|\\* )"
+                regex : "^\\s*(?:但是|同時|並且|而且|那麼|當|假定|假設|假如|\\* )"
             },
             {
                 token : "string",           // multi line """ string start

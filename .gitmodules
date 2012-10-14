@@ -1,7 +1,3 @@
 [submodule "highlight.js/highlight"]
 	path = highlight.js/highlight
 	url = git://github.com/isagalaev/highlight.js.git
-
-[submodule "ace/ace"]
-	path = ace/ace
-	url = git://github.com/ajaxorg/ace.git

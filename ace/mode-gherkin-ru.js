@@ -1,6 +1,6 @@
 define('ace/mode/gherkin-ru', function(require, exports, module) {
 
-var oop = require("pilot/oop");
+var oop = require("../lib/oop");
 var TextMode = require("ace/mode/text").Mode;
 var Tokenizer = require("ace/tokenizer").Tokenizer;
 var MatchingBraceOutdent = require("ace/mode/matching_brace_outdent").MatchingBraceOutdent;
@@ -24,7 +24,7 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword",
-                regex : "^\\s*(?:А |Но |К тому же |И |Тогда |То |Когда |Если |Пусть |Дано |Допустим |\\* )"
+                regex : "^\\s*(?:А |Но |Также |К тому же |И |Тогда |То |Когда |Если |Пусть |Дано |Допустим |\\* )"
             },
             {
                 token : "string",           // multi line """ string start

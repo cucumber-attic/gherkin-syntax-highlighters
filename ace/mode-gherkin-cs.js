@@ -1,6 +1,6 @@
 define('ace/mode/gherkin-cs', function(require, exports, module) {
 
-var oop = require("pilot/oop");
+var oop = require("../lib/oop");
 var TextMode = require("ace/mode/text").Mode;
 var Tokenizer = require("ace/tokenizer").Tokenizer;
 var MatchingBraceOutdent = require("ace/mode/matching_brace_outdent").MatchingBraceOutdent;
@@ -24,7 +24,7 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword",
-                regex : "^\\s*(?:Ale |A také |A |Pak |Když |Pokud |\\* )"
+                regex : "^\\s*(?:Ale |A |A také |Pak |Když |Za předpokladu |Pokud |\\* )"
             },
             {
                 token : "string",           // multi line """ string start

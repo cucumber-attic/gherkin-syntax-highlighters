@@ -1,6 +1,6 @@
 define('ace/mode/gherkin-pt', function(require, exports, module) {
 
-var oop = require("pilot/oop");
+var oop = require("../lib/oop");
 var TextMode = require("ace/mode/text").Mode;
 var Tokenizer = require("ace/tokenizer").Tokenizer;
 var MatchingBraceOutdent = require("ace/mode/matching_brace_outdent").MatchingBraceOutdent;
@@ -20,7 +20,7 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:Exemplos|Esquema do Cenario|Esquema do Cenário|Cenario|Cenário|Contexto|Funcionalidade):",
+                regex : "^\\s*(?:Cenarios|Cenários|Exemplos|Delineacao do Cenario|Delineação do Cenário|Esquema do Cenario|Esquema do Cenário|Cenario|Cenário|Fundo|Cenario de Fundo|Cenário de Fundo|Contexto|Caracteristica|Característica|Funcionalidade):",
             },
             {
                 token : "keyword",

@@ -1,6 +1,6 @@
 define('ace/mode/gherkin-zh_cn', function(require, exports, module) {
 
-var oop = require("pilot/oop");
+var oop = require("../lib/oop");
 var TextMode = require("ace/mode/text").Mode;
 var Tokenizer = require("ace/tokenizer").Tokenizer;
 var MatchingBraceOutdent = require("ace/mode/matching_brace_outdent").MatchingBraceOutdent;
@@ -20,11 +20,11 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:例子|场景大纲|场景|背景|功能):",
+                regex : "^\\s*(?:例子|剧本大纲|场景大纲|剧本|场景|背景|功能):",
             },
             {
                 token : "keyword",
-                regex : "^\\s*(?:但是|而且|那么|当|假如|\\* )"
+                regex : "^\\s*(?:但是|同时|并且|而且|那么|当|假定|假设|假如|\\* )"
             },
             {
                 token : "string",           // multi line """ string start
