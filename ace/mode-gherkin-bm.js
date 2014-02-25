@@ -20,17 +20,17 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:Contoh |Menggariskan Senario |Senario|Latar Belakang|Fungsi):",
+                regex : "^\\s*(?:Contoh|Menggariskan Senario|Template Keadaan|Template Situai|Template Senario|Keadaan|Situai|Senario|Latar Belakang|Fungsi):"
             },
             {
                 token : "keyword",
-                regex : "^\\s*(?:Tetapi |Dan |Kemudian |Apabila |Bagi |\\* )"
+                regex : "^\\s*(?:Tapi |Tetapi |Dan |Kemudian |Maka |Apabila |Bagi |Diberi |\\* )"
             },
             {
                 token : "string",           // multi line """ string start
                 regex : '^\\s*"{3}.*$',
                 next : "qqstring"
-            },
+            }
         ],
         "qqstring" : [ {
                 token : "string", // multi line """ string end
@@ -77,4 +77,43 @@ oop.inherits(Mode, TextMode);
 
 exports.Mode = Mode;
 
+});
+
+define('ace/mode/matching_brace_outdent', ['require', 'exports', 'module' , 'ace/range'], function(require, exports, module) {
+
+var Range = require("../range").Range;
+
+var MatchingBraceOutdent = function() {};
+
+(function() {
+
+    this.checkOutdent = function(line, input) {
+        if (! /^\s+$/.test(line))
+            return false;
+
+        return /^\s*\}/.test(input);
+    };
+
+    this.autoOutdent = function(doc, row) {
+        var line = doc.getLine(row);
+        var match = line.match(/^(\s*\})/);
+
+        if (!match) return 0;
+
+        var column = match[1].length;
+        var openBracePos = doc.findMatchingBracket({row: row, column: column});
+
+        if (!openBracePos || openBracePos.row == row) return 0;
+
+        var indent = this.$getIndent(doc.getLine(openBracePos.row));
+        doc.replace(new Range(row, 0, row, column-1), indent);
+    };
+
+    this.$getIndent = function(line) {
+        return line.match(/^\s*/)[0];
+    };
+
+}).call(MatchingBraceOutdent.prototype);
+
+exports.MatchingBraceOutdent = MatchingBraceOutdent;
 });
