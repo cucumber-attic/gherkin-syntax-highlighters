@@ -20,7 +20,7 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:例子|剧本大纲|场景大纲|剧本|场景|背景|功能):",
+                regex : "^\\s*(?:例子|剧本大纲|场景大纲|剧本|场景|背景|功能):"
             },
             {
                 token : "keyword",
@@ -30,7 +30,7 @@ var GherkinHighlightRules = function()
                 token : "string",           // multi line """ string start
                 regex : '^\\s*"{3}.*$',
                 next : "qqstring"
-            },
+            }
         ],
         "qqstring" : [ {
                 token : "string", // multi line """ string end

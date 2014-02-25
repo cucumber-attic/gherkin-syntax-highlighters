@@ -20,7 +20,7 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:예|시나리오 개요|시나리오|배경|기능):",
+                regex : "^\\s*(?:예|시나리오 개요|시나리오|배경|기능):"
             },
             {
                 token : "keyword",
@@ -30,7 +30,7 @@ var GherkinHighlightRules = function()
                 token : "string",           // multi line """ string start
                 regex : '^\\s*"{3}.*$',
                 next : "qqstring"
-            },
+            }
         ],
         "qqstring" : [ {
                 token : "string", // multi line """ string end

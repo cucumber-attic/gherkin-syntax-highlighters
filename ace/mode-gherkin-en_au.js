@@ -20,7 +20,7 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:You'll wanna|Reckon it's like|Awww, look mate|First off|Pretty much):",
+                regex : "^\\s*(?:You'll wanna|Reckon it's like|Awww, look mate|First off|Pretty much):"
             },
             {
                 token : "keyword",
@@ -30,7 +30,7 @@ var GherkinHighlightRules = function()
                 token : "string",           // multi line """ string start
                 regex : '^\\s*"{3}.*$',
                 next : "qqstring"
-            },
+            }
         ],
         "qqstring" : [ {
                 token : "string", // multi line """ string end

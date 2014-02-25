@@ -20,7 +20,7 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:Cenarios|Cenários|Exemplos|Delineacao do Cenario|Delineação do Cenário|Esquema do Cenario|Esquema do Cenário|Cenario|Cenário|Fundo|Cenario de Fundo|Cenário de Fundo|Contexto|Caracteristica|Característica|Funcionalidade):",
+                regex : "^\\s*(?:Cenarios|Cenários|Exemplos|Delineacao do Cenario|Delineação do Cenário|Esquema do Cenario|Esquema do Cenário|Cenario|Cenário|Fundo|Cenario de Fundo|Cenário de Fundo|Contexto|Caracteristica|Característica|Funcionalidade):"
             },
             {
                 token : "keyword",
@@ -30,7 +30,7 @@ var GherkinHighlightRules = function()
                 token : "string",           // multi line """ string start
                 regex : '^\\s*"{3}.*$',
                 next : "qqstring"
-            },
+            }
         ],
         "qqstring" : [ {
                 token : "string", // multi line """ string end

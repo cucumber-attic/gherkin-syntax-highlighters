@@ -1,4 +1,4 @@
-define('ace/mode/gherkin-es', function(require, exports, module) {
+define('ace/mode/gherkin-gl', function(require, exports, module) {
 
 var oop = require("../lib/oop");
 var TextMode = require("ace/mode/text").Mode;
@@ -20,11 +20,11 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:Ejemplos|Esquema del escenario|Escenario|Antecedentes|Característica):"
+                regex : "^\\s*(?:Exemplos|Esbozo do escenario|Escenario|Contexto|Característica):"
             },
             {
                 token : "keyword",
-                regex : "^\\s*(?:Pero |Y |Entonces |Cuando |Dadas |Dados |Dada |Dado |\\* )"
+                regex : "^\\s*(?:Pero |Mais |E |Logo |Entón |Cando |Dadas |Dados |Dada |Dado |\\* )"
             },
             {
                 token : "string",           // multi line """ string start

@@ -20,7 +20,7 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:Сценарији|Примери|Концепт|Скица|Структура сценарија|Пример|Сценарио|Позадина|Основа|Контекст|Особина|Могућност|Функционалност):",
+                regex : "^\\s*(?:Сценарији|Примери|Концепт|Скица|Структура сценарија|Пример|Сценарио|Позадина|Основа|Контекст|Особина|Могућност|Функционалност):"
             },
             {
                 token : "keyword",
@@ -30,7 +30,7 @@ var GherkinHighlightRules = function()
                 token : "string",           // multi line """ string start
                 regex : '^\\s*"{3}.*$',
                 next : "qqstring"
-            },
+            }
         ],
         "qqstring" : [ {
                 token : "string", // multi line """ string end

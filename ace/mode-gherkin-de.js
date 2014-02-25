@@ -20,17 +20,17 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:Beispiele|Szenariogrundriss|Szenario|Grundlage|Funktionalität):",
+                regex : "^\\s*(?:Beispiele|Szenariogrundriss|Szenario|Grundlage|Funktionalität):"
             },
             {
                 token : "keyword",
-                regex : "^\\s*(?:Aber |Und |Dann |Wenn |Gegeben sei |Angenommen |\\* )"
+                regex : "^\\s*(?:Aber |Und |Dann |Wenn |Gegeben seien |Gegeben sei |Angenommen |\\* )"
             },
             {
                 token : "string",           // multi line """ string start
                 regex : '^\\s*"{3}.*$',
                 next : "qqstring"
-            },
+            }
         ],
         "qqstring" : [ {
                 token : "string", // multi line """ string end

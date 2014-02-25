@@ -20,17 +20,17 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:Príklady|Náčrt Scenáru|Scenár|Pozadie|Požiadavka):",
+                regex : "^\\s*(?:Príklady|Osnova Scenára|Náčrt Scenára|Náčrt Scenáru|Scenár|Pozadie|Vlastnosť|Funkcia|Požiadavka):"
             },
             {
                 token : "keyword",
-                regex : "^\\s*(?:Ale |A |Tak |Keď |Pokiaľ |\\* )"
+                regex : "^\\s*(?:Ale |A zároveň |A taktiež |A tiež |A |Potom |Tak |Ak |Keď |Za predpokladu |Pokiaľ |\\* )"
             },
             {
                 token : "string",           // multi line """ string start
                 regex : '^\\s*"{3}.*$',
                 next : "qqstring"
-            },
+            }
         ],
         "qqstring" : [ {
                 token : "string", // multi line """ string end

@@ -20,7 +20,7 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:サンプル|例|シナリオテンプレ|テンプレ|シナリオテンプレート|シナリオアウトライン|シナリオ|背景|機能|フィーチャ):",
+                regex : "^\\s*(?:サンプル|例|シナリオテンプレ|テンプレ|シナリオテンプレート|シナリオアウトライン|シナリオ|背景|機能|フィーチャ):"
             },
             {
                 token : "keyword",
@@ -30,7 +30,7 @@ var GherkinHighlightRules = function()
                 token : "string",           // multi line """ string start
                 regex : '^\\s*"{3}.*$',
                 next : "qqstring"
-            },
+            }
         ],
         "qqstring" : [ {
                 token : "string", // multi line """ string end

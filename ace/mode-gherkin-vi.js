@@ -20,7 +20,7 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:Dữ liệu|Khung kịch bản|Khung tình huống|Kịch bản|Tình huống|Bối cảnh|Tính năng):",
+                regex : "^\\s*(?:Dữ liệu|Khung kịch bản|Khung tình huống|Kịch bản|Tình huống|Bối cảnh|Tính năng):"
             },
             {
                 token : "keyword",
@@ -30,7 +30,7 @@ var GherkinHighlightRules = function()
                 token : "string",           // multi line """ string start
                 regex : '^\\s*"{3}.*$',
                 next : "qqstring"
-            },
+            }
         ],
         "qqstring" : [ {
                 token : "string", // multi line """ string end

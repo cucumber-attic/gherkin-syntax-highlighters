@@ -20,17 +20,17 @@ var GherkinHighlightRules = function()
             },
             {
                 token : "keyword.with_children",
-                regex : "^\\s*(?:Contoh |Menggariskan Senario |Senario|Latar Belakang|Fungsi):",
+                regex : "^\\s*(?:Contoh|Menggariskan Senario|Template Keadaan|Template Situai|Template Senario|Keadaan|Situai|Senario|Latar Belakang|Fungsi):"
             },
             {
                 token : "keyword",
-                regex : "^\\s*(?:Tetapi |Dan |Kemudian |Apabila |Bagi |\\* )"
+                regex : "^\\s*(?:Tapi |Tetapi |Dan |Kemudian |Maka |Apabila |Bagi |Diberi |\\* )"
             },
             {
                 token : "string",           // multi line """ string start
                 regex : '^\\s*"{3}.*$',
                 next : "qqstring"
-            },
+            }
         ],
         "qqstring" : [ {
                 token : "string", // multi line """ string end
